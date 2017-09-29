@@ -1,0 +1,3 @@
+* drill
+
+Org-files used for learning with ~org-drill~ mode.
