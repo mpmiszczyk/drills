@@ -1,7 +1,57 @@
 * list
+** Agile Manifesto                                                   :craft:
+*** TODO give definition to all
+*** TODO principles [[http://agilemanifesto.org/principles.html][from here]]
+*** TODO Long description from [[https://en.wikipedia.org/wiki/Agile_software_development][wiki]]
+** Craftsmanship Manifesto                                           :craft:
+*** DONE Manifesto
+CLOSED: [2017-09-29 Fri 19:25]
+*** TODO journe from to
 ** Reactive                                                          :craft:
+*** TODO Finish glossary
+https://www.reactivemanifesto.org/glossary
+** SOLID                                                             :craft:
 ** Scala                                                             :craft:
 ** XP                                                                :craft:
+*** TODO Values
+**** Communication
+**** Simplicity
+**** Feedback
+**** Courge
+**** Respect
+*** TODO Principles
+**** Humanity
+**** Economics
+**** Mutual Benefit
+**** Self Similarity
+**** Improvement
+**** Diversity
+**** Reflection
+**** Flow
+**** Opporunity
+**** Redundancy
+**** Filur
+**** Qulity
+**** Baby Steps
+**** Accepted Responsibility
+*** TODO Practices // book have much more ...
+**** Fine Scale Feedback
+- pair programming
+- planning game
+- TDD
+- whole team
+**** Continous process
+- continous integration
+- design improvement
+- small releases
+**** Shared understanding
+- coding standard
+- collectice code ownership
+- simple design
+- system metaphor
+**** Programmer welfare
+- sustainable pace
+
 ** Procrastination
 *** scear the monkey
 **** awake the Decision Maker
@@ -47,12 +97,9 @@ distractions, all the rest can wait fifteen minutes.
 **** Rewart yourself
 
 And do it after.
-** Agile Manifesto                                                   :craft:
-** Craftsmanship Manifesto                                           :craft:
 ** Emacs                                                             :emacs:
 ** learning
 ** pragmatic programmer                                              :craft:
-** SOLID                                                             :craft:
 ** PRINCE2                                                           :craft:
 many people ask about it
 ** org-mode                                                          :emacs:

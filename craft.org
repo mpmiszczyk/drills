@@ -1,0 +1,477 @@
+* craft                                                               :craft:
+** Reactive Manifesto
+** Agile Manifesto
+
+While there is value in the items on the right, we value the items on
+the left more.
+
+*** Over                                                            :drill:
+:PROPERTIES:
+:ID:       8cb9208f-4866-4841-bcf3-324dcf92e6d9
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2017-09-30 Sat 01:11]
+:END:
+*[Individuals and interactions]* over processes and tools.
+**** craftsmanship
+Not only *individuals and interactions* but also *community of
+professionals*
+*** Over                                                            :drill:
+:PROPERTIES:
+:ID:       5b9314b6-4b9e-4eae-8d3a-426d323b8d1e
+:END:
+*Individuals and interactions* over [processes and tools]
+
+*** Over                                                            :drill:
+:PROPERTIES:
+:ID:       a5591094-bfe7-49e4-9e42-20570eaac95d
+:END:
+*[Working software]* over comprehensive documentation
+
+*** Over                                                            :drill:
+:PROPERTIES:
+:ID:       7d939d43-e7c0-409f-b5e4-d0f1a746454a
+:END:
+*Working software* over [comprehensive documentation]
+
+*** Over                                                            :drill:
+:PROPERTIES:
+:ID:       eaa49b90-10b4-4e95-9baa-016510227096
+:END:
+*[Customer collaboration]* over contract negotiation
+
+*** Over                                                            :drill:
+:PROPERTIES:
+:ID:       801ed6c7-4723-4ab7-914b-11fafbd98307
+:END:
+*Customer collaboration* over [contract negotiation]
+
+*** Over                                                            :drill:
+:PROPERTIES:
+:ID:       56fa1473-1496-4d48-8fcd-16a2b715d9dc
+:END:
+*[Responding to change]* over following a plan
+
+*** Over                                                            :drill:
+:PROPERTIES:
+:ID:       32cffec2-a7c0-48a5-9728-df15aa14d156
+:END:
+*Responding to change* over [following a plan]
+
+*** Over
+** Software Craftsmanship
+
+
+*** Manifesto                                                       :drill:
+SCHEDULED: <2017-10-04 Wed>
+:PROPERTIES:
+:DRILL_CARD_TYPE: twosided
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-09-30 Sat 01:07]
+:ID:       c251bf80-cda1-4c13-9b5a-9cc3b1b88c9d
+:END:
+
+**** Not only
+working software
+
+**** but also
+well crafted software
+
+**** from agile
+Working Software over comprehensive documentation
+
+*** Manifesto                                                       :drill:
+:PROPERTIES:
+:DRILL_CARD_TYPE: twosided
+:ID:       265df42b-a815-4bc9-8ca6-1b8c6a8bd966
+:END:
+
+**** Not only
+responding to change
+
+**** but also
+steadily adding value
+
+**** from agile
+Responding to change over following a plan
+
+*** Manifesto                                                       :drill:
+:PROPERTIES:
+:DRILL_CARD_TYPE: twosided
+:ID:       10baea12-fc98-429b-9ee7-9c435c4146a7
+:END:
+
+**** Not only
+individuals and interactions
+
+**** but also
+a community of professionals
+
+**** from agile
+Individuals and interactions over processes and tools
+
+*** Manifesto                                                       :drill:
+:PROPERTIES:
+:DRILL_CARD_TYPE: twoside
+:ID:       fbb027b5-d1cd-465f-bdad-8da38acbded5
+:END:
+
+**** Not only
+customer collaboration
+
+**** but also
+productive partnerships
+
+**** from agile
+Customer collaboration over contract renegotiation
+
+** Reactive
+
+*** Manifesto                                                       :drill:
+:PROPERTIES:
+:ID:       e7135911-f6b1-4fa2-b1eb-6ca9f25d1061
+:END:
+Reactive systems are
+
+**** List all goals
+
+ - responsive
+ - resilient
+ - elastic
+ - message driven
+
+
+*** Manifesto                                                       :drill:
+:PROPERTIES:
+:ID:       de26c209-ea03-4fcf-a905-7c936d3939de
+:END:
+Reactive systems are
+
+**** List all benefits
+
+ - flexible
+ - loosely-coupled
+ - scalable
+ - tolerant of failure
+
+*** Manifesto                                                       :drill:
+SCHEDULED: <2017-10-04 Wed>
+:PROPERTIES:
+:ID:       50d0c2db-4ef0-41d3-9e04-6bc687bb8278
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-09-30 Sat 01:19]
+:END:
+Describe
+
+**** Responsive
+
+
+**** Short
+
+   - respond fast
+   - feature -> usability
+   - problems detected quickly
+
+**** Long
+
+The system responds in a timely manner if at all possible.
+Responsiveness is the cornerstone of usability and utility, but more
+than that, responsiveness means that problems may be detected quickly
+and dealt with effectively.  Responsive systems focus on providing
+rapid and consistent response times, establishing reliable upper
+bounds so they deliver a consistent quality of service.  This
+consistent behaviour in turn simplifies error handling, builds end
+user confidence, and encourages further interaction.
+
+*** Manifesto                                                       :drill:
+:PROPERTIES:
+:ID:       a261e838-15df-4648-b788-16fa0bc007cd
+:END:
+Describe
+
+**** Resilient
+
+**** Short
+
+ - stays responsive in the face of failure
+ - achieved by
+   * replication
+   * isolation
+   * delegation
+ - client not burdened with handling a failure
+
+**** Long
+The system stays responsive in the face of failure.  This applies not
+only to highly-available, mission critical systems — any system that
+is not resilient will be unresponsive after a failure.  Resilience is
+achieved by replication, containment, isolation and
+delegation. Failures are contained within each component, isolating
+components from each other and thereby ensuring that parts of the
+system can fail and recover without compromising the system as a
+whole.  Recovery of each component is delegated to another (external)
+component and high-availability is ensured by replication where
+necessary.  The client of a component is not burdened with handling
+its failures.
+
+*** Manifesto                                                       :drill:
+:PROPERTIES:
+:ID:       21e2503a-b163-468f-a4c0-630befdf4376
+:END:
+Describe
+
+**** Elastic
+
+***** Short
+
+ - responsive under varying workload
+ - react to change
+ - no bottlenecks
+ - live performance measures
+
+**** Long
+The system stays responsive under varying workload.  Reactive Systems
+can react to changes in the input rate by increasing or decreasing the
+resources allocated to service these inputs.  This implies designs that
+have no contention points or central bottlenecks, resulting in the
+ability to shard or replicate components and distribute inputs among
+them.  Reactive Systems support predictive, as well as Reactive,
+scaling algorithms by providing relevant live performance
+measures.  They achieve elasticity in a cost-effective way on commodity
+hardware and software platforms.
+
+*** Manifesto                                                       :drill:
+:PROPERTIES:
+:ID:       cd262b40-dc14-4613-a179-0b8411602103
+:END:
+Describe
+
+**** Message Driven
+
+**** Short
+
+ - asynchronous
+ - benefits
+   - loose coupling
+   - isolation
+   - location transparency
+   - delegation of failure
+ - back-pressure
+
+**** Long
+Reactive Systems rely on asynchronous message-passing to establish a
+boundary between components that ensures loose coupling, isolation and
+location transparency.  This boundary also provides the means to
+delegate failures as messages.  Employing explicit message-passing
+enables load management, elasticity, and flow control by shaping and
+monitoring the message queues in the system and applying back-pressure
+when necessary.  Location transparent messaging as a means of
+communication makes it possible for the management of failure to work
+with the same constructs and semantics across a cluster or within a
+single host.  Non-blocking communication allows recipients to only
+consume resources while active, leading to less system overhead.
+
+*** Glossary                                                        :drill:
+:PROPERTIES:
+:ID:       068cab71-1c18-4648-8b3a-0a50dcab719a
+:END:
+Describe
+
+**** Asynchronous
+
+****  Short
+
+ - at any point in time
+ - not observable
+ - can resume at once
+
+**** Long
+The Oxford Dictionary defines asynchronous as “not existing or
+occurring at the same time”.  In the context of this manifesto we mean
+that the processing of a request occurs at an arbitrary point in time,
+sometime after it has been transmitted from client to service.  The
+client cannot directly observe, or synchronize with, the execution
+that occurs within the service.  This is the antonym of synchronous
+processing which implies that the client only resumes its own
+execution once the service has processed the request.
+
+*** Glossary
+Describe
+
+**** Back-Pressure
+
+**** Short
+
+ - 
+
+**** Long
+
+When one component is struggling to keep-up, the system as a whole
+needs to respond in a sensible way. It is unacceptable for the
+component under stress to fail catastrophically or to drop messages in
+an uncontrolled fashion.  Since it can’t cope and it can’t fail it
+should communicate the fact that it is under stress to upstream
+components and so get them to reduce the load.  This back-pressure is
+an important feedback mechanism that allows systems to gracefully
+respond to load rather than collapse under it.  The back-pressure may
+cascade all the way up to the user, at which point responsiveness may
+degrade, but this mechanism will ensure that the system is resilient
+under load, and will provide information that may allow the system
+itself to apply other resources to help distribute the load, see
+Elasticity.
+
+*** Glossary                                                        :drill:
+:PROPERTIES:
+:ID:       07b9a567-7db7-427f-87d1-cea6cdaeb7de
+:END:
+Describe
+
+**** Batching
+
+Current computers are optimized for the repeated execution of the same
+task: instruction caches and branch prediction increase the number of
+instructions that can be processed per second while keeping the clock
+frequency unchanged. This means that giving different tasks to the
+same CPU core in rapid succession will not benefit from the full
+performance that could otherwise be achieved: if possible we should
+structure the program such that its execution alternates less
+frequently between different tasks. This can mean processing a set of
+data elements in batches, or it can mean performing different
+processing steps on dedicated hardware threads.
+
+The same reasoning applies to the use of external resources that need
+synchronization and coordination. The I/O bandwidth offered by
+persistent storage devices can improve dramatically when issuing
+commands from a single thread (and thereby CPU core) instead of
+contending for bandwidth from all cores. Using a single entry point
+has the added advantage that operations can be reordered to better
+suit the optimal access patterns of the device (current storage
+devices perform better for linear than random access).
+
+Additionally, batching provides the opportunity to share out the cost
+of expensive operations such as I/O or expensive computations. For
+example, packing multiple data items into the same network packet or
+disk block to increase efficiency and reduce utilization.
+
+*** Glossary
+Describe
+
+**** Failure
+In contrast to Error
+
+**** Short
+
+   - unexpected
+   - may prevent response
+   - error ->
+     - bad input upon validation
+     - respond to client
+     - know how to handle
+   - failure ->
+     - can't handle
+     - hardware malfunction
+     - out of resources
+     - corrupted state
+
+**** Long 
+
+A failure is an unexpected event within a service that prevents it
+from continuing to function normally.  A failure will generally prevent
+responses to the current, and possibly all following, client
+requests.  This is in contrast with an error, which is an expected and
+coded-for condition—for example an error discovered during input
+validation, that will be communicated to the client as part of the
+normal processing of the message.  Failures are unexpected and will
+require intervention before the system can resume at the same level of
+operation.  This does not mean that failures are always fatal, rather
+that some capacity of the system will be reduced following a
+failure.  Errors are an expected part of normal operations, are dealt
+with immediately and the system will continue to operate at the same
+capacity following an error.
+
+Examples of failures are hardware malfunction, processes terminating
+due to fatal resource exhaustion, program defects that result in
+corrupted internal state.
+
+
+*** Glossary                                                        :drill:
+:PROPERTIES:
+:ID:       29b29221-63e1-4d97-aea4-dc0bb8a30916
+:END:
+Describe
+
+**** Message-Driven
+In contrast to Event-Driven
+
+**** Short
+
+ - event -> signal emitted upon reaching given state
+ - message -> data sent to destination
+ - rather than focused on source, concentrate on recipient
+   - that's where the logic is
+ - ? resilience ?
+
+**** Long
+
+A message is an item of data that is sent to a specific
+destination. An event is a signal emitted by a component upon reaching
+a given state.  In a message-driven system addressable recipients
+await the arrival of messages and react to them, otherwise lying
+dormant.  In an event-driven system notification listeners are
+attached to the sources of events such that they are invoked when the
+event is emitted.  This means that an event-driven system focuses on
+addressable event sources while a message-driven system concentrates
+on addressable recipients.  A message can contain an encoded event as
+its payload.
+
+Resilience is more difficult to achieve in an event-driven system due
+to the short-lived nature of event consumption chains: when processing
+is set in motion and listeners are attached in order to react to and
+transform the result, these listeners typically handle success or
+failure directly and in the sense of reporting back to the original
+client.  Responding to the failure of a component in order to restore
+its proper function, on the other hand, requires a treatment of these
+failures that is not tied to ephemeral client requests, but that
+responds to the overall component health state.
+
+
+** eXtreme Programming
+
+*** Values                                                          :drill:
+:PROPERTIES:
+:ID:       b82e1b84-c553-41fa-9e73-14edfd222b70
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2017-09-30 Sat 01:15]
+:END:
+List all
+
+**** Values
+ - Communication
+ - Simplicity
+ - Feedback
+ - Courage
+ - Respect
+
+#  LocalWords:  twosided cda bc bd
