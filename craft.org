@@ -417,6 +417,17 @@ processing which implies that the client only resumes its own
 execution once the service has processed the request.
 
 *** Reactive glossary                                               :drill:
+:PROPERTIES:
+:ID:       cc9ec132-9a41-4dd6-aff6-d60fa239e5c6
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2017-10-01 Sun 01:40]
+:END:
 Describe
 
 **** Back-Pressure
@@ -494,6 +505,17 @@ example, packing multiple data items into the same network packet or
 disk block to increase efficiency and reduce utilization.
 
 *** Reactive glossary                                               :drill:
+:PROPERTIES:
+:ID:       f2bf48ed-4372-42a9-8eed-987c4e188c4f
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2017-10-01 Sun 01:40]
+:END:
 Describe
 
 **** Failure
