@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-10-04 Wed 13:21]--[2017-10-04 Wed 22:00] =>  8:39
 CLOCK: [2017-10-04 Wed 12:34]--[2017-10-04 Wed 13:04] =>  0:30
 :END:
 ** Agile Manifesto
@@ -76,7 +77,7 @@ SCHEDULED: <2017-10-08 Sun>
 contract negotiation
 
 **** craftsmanship
-Not only *cunstomer collabortion* but also ? *productive partnership*?
+Not only *customer collaboration* but also ? *productive partnership*?
 
 *** Agile Manifesto                                                 :drill:
 SCHEDULED: <2017-10-14 Sat>
@@ -101,11 +102,18 @@ following a plan
 
 **** craftsmanship
 Not only *responding to change* but also *stadily adding value*
-
+*** All                                                             :drill:
+:PROPERTIES:
+:ID:       8a9d1627-0e5a-4c10-a66e-d49bda444254
+:END:
+**** List all four
+- Individuals and interactions /over/ processes and tools
+- Working software /over/ comprehensive documentation.
+- Customer collaboration /over/ contract negotiation.
+- Responding to change /ever/ following a plan.
 ** Software Craftsmanship
 
-
-*** Software Craftsanship Manifesto                                 :drill:
+*** Software Craftsmanship Manifesto                                :drill:
 SCHEDULED: <2017-10-13 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
@@ -129,7 +137,7 @@ well crafted software
 **** from agile
 Working Software over comprehensive documentation
 
-*** Software Craftsanship Manifesto                                 :drill:
+*** Software Craftsmanship Manifesto                                :drill:
 SCHEDULED: <2017-10-13 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
@@ -153,7 +161,7 @@ steadily adding value
 **** from agile
 Responding to change over following a plan
 
-*** Software Craftsanship Manifesto                                 :drill:
+*** Software Craftsmanship Manifesto                                :drill:
 SCHEDULED: <2017-10-13 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
@@ -177,7 +185,7 @@ a community of professionals
 **** from agile
 Individuals and interactions over processes and tools
 
-*** Software Craftsanship Manifesto                                 :drill:
+*** Software Craftsmanship Manifesto                                :drill:
 :PROPERTIES:
 :DRILL_CARD_TYPE: twoside
 :ID:       fbb027b5-d1cd-465f-bdad-8da38acbded5
@@ -192,6 +200,16 @@ productive partnerships
 **** from agile
 Customer collaboration over contract renegotiation
 
+*** Software Craftsmanship Manifesto                                :drill:
+:PROPERTIES:
+:ID:       df890367-d8ce-4cef-999b-f65458a0ca03
+:END:
+
+**** List all four
+- Not only *working software* but also *well crafted software*.
+- Not only *responding to change* but also *seadily adding value*.
+- Not only *individuals and interactions* but also *community of profesionals*.
+- Not only *customer colaboration* but also *productive partnerships*.
 ** Reactive
 
 *** Reactive Manifesto                                              :drill:
@@ -407,6 +425,7 @@ Describe
  - at any point in time
  - not observable
  - can resume at once
+ - can delegate failure
 
 **** Long
 The Oxford Dictionary defines asynchronous as “not existing or
@@ -440,7 +459,7 @@ Describe
  - unacceptable for component under stress to fail (totally)
    - dropp messages
    - uncontrolled failure
- - component comunicates its problems
+ - component communicates its problems
  - reduction of workload
  - system reacts as whole
 
@@ -482,7 +501,7 @@ Describe
  - same task executed in group
  - to use cache
  - same with external resources
-   - think multicommit in SQL
+   - think multi-commit in SQL
    - multiple data items into same packet/request
 
 **** Long
