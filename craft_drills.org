@@ -17,10 +17,10 @@ SCHEDULED: <2017-10-09 Mon>
 :DRILL_REPEATS_SINCE_FAIL: 3
 :DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.333
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-09-30 Sat 13:06]
+:DRILL_AV.RA....UA..TY: 2.333
+:DRILL_E SE. 2.2......
+:DRILL_L+---------+....
+:DRILL_L+---------+D: .2017-09-30 Sat 13:06]
 :END:
 
 **** __
@@ -233,6 +233,30 @@ Reactive systems are
  - resilient
  - elastic
  - message driven
+
+**** Diagram
+
+
+#+BEGIN_EXPORT ascii
+                        +----------------+
+               +------->|  Responsive    |<------+
+               |        +----------------+       |
+               |                ^                |
+               |                |                |
+               |                |                |
+       +----------------+       |        +----------------+
+       |  Elastic       |<------+------->| Resilient      |
+       +----------------+       |        +-------+--------+
+               ^                |                ^
+               |                |                |
+               |        +----------------+       |
+               +--------| Message Driven |-------+
+                        +----------------+
+#+END_EXPORT
+
+
+
+
 
 *** Reactive Manifesto                                              :drill:
 SCHEDULED: <2017-10-13 Fri>
