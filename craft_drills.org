@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-10-08 Sun 12:27]--[2017-10-08 Sun 12:35] =>  0:08
 CLOCK: [2017-10-04 Wed 13:21]--[2017-10-04 Wed 22:00] =>  8:39
 CLOCK: [2017-10-04 Wed 12:34]--[2017-10-04 Wed 13:04] =>  0:30
 :END:
@@ -10,6 +11,9 @@ the left more.
 
 *** Agile Manifesto                                                 :drill:
 SCHEDULED: <2017-10-09 Mon>
+:PROPERTIES:
+:ID:       e06d8908-361d-4711-b6d5-7c1d0120726f
+:END:
 :PROPERTIES:
 :ID:       8cb9208f-4866-4841-bcf3-324dcf92e6d9
 :DRILL_CARD_TYPE: twosided
@@ -56,18 +60,18 @@ comprehensive documentation
 Not only *working software* but also *well crafted software*
 
 *** Agile Manifesto                                                 :drill:
-SCHEDULED: <2017-10-08 Sun>
+SCHEDULED: <2017-10-17 Tue>
 :PROPERTIES:
 :ID:       eaa49b90-10b4-4e95-9baa-016510227096
 :DRILL_CARD_TYPE: twosided
-:DRILL_LAST_INTERVAL: 3.86
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 9.1096
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2017-10-04 Wed 12:42]
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 12:30]
 :END:
 
 **** __
@@ -201,13 +205,22 @@ productive partnerships
 Customer collaboration over contract renegotiation
 
 *** Software Craftsmanship Manifesto                                :drill:
+SCHEDULED: <2017-10-12 Thu>
 :PROPERTIES:
 :ID:       df890367-d8ce-4cef-999b-f65458a0ca03
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 13:01]
 :END:
 
 **** List all four
 - Not only *working software* but also *well crafted software*.
-- Not only *responding to change* but also *seadily adding value*.
+- Not only *responding to change* but also *steadily adding value*.
 - Not only *individuals and interactions* but also *community of profesionals*.
 - Not only *customer colaboration* but also *productive partnerships*.
 ** Reactive
@@ -281,17 +294,17 @@ Reactive systems are
  - fault-tolerant
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-08 Sun>
+SCHEDULED: <2017-10-12 Thu>
 :PROPERTIES:
 :ID:       50d0c2db-4ef0-41d3-9e04-6bc687bb8278
-:DRILL_LAST_INTERVAL: 3.725
+:DRILL_LAST_INTERVAL: 3.86
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.667
-:DRILL_EASE: 2.22
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.6
+:DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-04 Wed 13:00]
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 12:32]
 :END:
 Describe
 
@@ -315,17 +328,17 @@ consistent behaviour in turn simplifies error handling, builds end
 user confidence, and encourages further interaction.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-08 Sun>
+SCHEDULED: <2017-10-12 Thu>
 :PROPERTIES:
 :ID:       a261e838-15df-4648-b788-16fa0bc007cd
-:DRILL_LAST_INTERVAL: 3.725
+:DRILL_LAST_INTERVAL: 3.86
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.4
-:DRILL_EASE: 2.22
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 5
+:DRILL_AVERAGE_QUALITY: 2.374
+:DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-04 Wed 12:46]
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 12:34]
 :END:
 Describe
 
@@ -334,11 +347,11 @@ Describe
 **** Short
 
  - stays responsive in the face of failure
+ - client not burdened with handling a failure
  - achieved by
    * replication
    * isolation
    * delegation
- - client not burdened with handling a failure
 
 **** Long
 The system stays responsive in the face of failure.  This applies not
@@ -354,17 +367,17 @@ necessary.  The client of a component is not burdened with handling
 its failures.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-08 Sun>
+SCHEDULED: <2017-10-16 Mon>
 :PROPERTIES:
 :ID:       21e2503a-b163-468f-a4c0-630befdf4376
-:DRILL_LAST_INTERVAL: 3.725
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 8.2695
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 7
-:DRILL_AVERAGE_QUALITY: 2.222
+:DRILL_AVERAGE_QUALITY: 2.4
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-04 Wed 13:03]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 12:29]
 :END:
 Describe
 
@@ -389,17 +402,17 @@ measures.  They achieve elasticity in a cost-effective way on commodity
 hardware and software platforms.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-08 Sun>
+SCHEDULED: <2017-10-12 Thu>
 :PROPERTIES:
 :ID:       cd262b40-dc14-4613-a179-0b8411602103
-:DRILL_LAST_INTERVAL: 3.725
+:DRILL_LAST_INTERVAL: 3.86
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.333
-:DRILL_EASE: 2.22
+:DRILL_TOTAL_REPEATS: 9
+:DRILL_FAILURE_COUNT: 6
+:DRILL_AVERAGE_QUALITY: 2.332
+:DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-04 Wed 13:04]
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 12:34]
 :END:
 Describe
 
@@ -428,17 +441,17 @@ single host.  Non-blocking communication allows recipients to only
 consume resources while active, leading to less system overhead.
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2017-10-08 Sun>
+SCHEDULED: <2017-10-16 Mon>
 :PROPERTIES:
 :ID:       068cab71-1c18-4648-8b3a-0a50dcab719a
-:DRILL_LAST_INTERVAL: 3.725
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 7.979
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.667
-:DRILL_EASE: 2.22
+:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-04 Wed 12:53]
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 12:28]
 :END:
 Describe
 
@@ -462,17 +475,17 @@ processing which implies that the client only resumes its own
 execution once the service has processed the request.
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2017-10-08 Sun>
+SCHEDULED: <2017-10-12 Thu>
 :PROPERTIES:
 :ID:       cc9ec132-9a41-4dd6-aff6-d60fa239e5c6
-:DRILL_LAST_INTERVAL: 3.86
+:DRILL_LAST_INTERVAL: 3.725
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.25
-:DRILL_EASE: 2.36
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-04 Wed 12:47]
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 12:32]
 :END:
 Describe
 
@@ -556,17 +569,17 @@ example, packing multiple data items into the same network packet or
 disk block to increase efficiency and reduce utilization.
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2017-10-08 Sun>
+SCHEDULED: <2017-10-17 Tue>
 :PROPERTIES:
 :ID:       f2bf48ed-4372-42a9-8eed-987c4e188c4f
-:DRILL_LAST_INTERVAL: 3.86
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 8.7892
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.333
-:DRILL_EASE: 2.36
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-04 Wed 12:44]
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 12:28]
 :END:
 Describe
 
@@ -660,17 +673,17 @@ responds to the overall component health state.
 ** eXtreme Programming
 
 *** XP Values                                                       :drill:
-SCHEDULED: <2017-10-08 Sun>
+SCHEDULED: <2017-10-17 Tue>
 :PROPERTIES:
 :ID:       b82e1b84-c553-41fa-9e73-14edfd222b70
-:DRILL_LAST_INTERVAL: 3.86
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 9.1096
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 7
-:DRILL_AVERAGE_QUALITY: 2.332
+:DRILL_AVERAGE_QUALITY: 2.499
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-04 Wed 12:54]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2017-10-08 Sun 12:31]
 :END:
 List all
 
