@@ -1,6 +1,7 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
-CLOCK: [2017-10-21 Sat 13:03]
+CLOCK: [2017-10-25 Wed 11:00]--[2017-10-25 Wed 11:25] =>  0:25
+CLOCK: [2017-10-21 Sat 13:03]--[2017-10-21 Sat 13:10] =>  0:07
 CLOCK: [2017-10-19 Thu 15:57]--[2017-10-19 Thu 16:00] =>  0:03
 CLOCK: [2017-10-16 Mon 10:26]--[2017-10-16 Mon 10:45] =>  0:19
 CLOCK: [2017-10-13 Fri 10:56]--[2017-10-13 Fri 11:20] =>  0:24
@@ -282,17 +283,17 @@ Reactive systems are
 
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-23 Mon>
+SCHEDULED: <2017-10-29 Sun>
 :PROPERTIES:
 :ID:       de26c209-ea03-4fcf-a905-7c936d3939de
-:DRILL_LAST_INTERVAL: 3.725
+:DRILL_LAST_INTERVAL: 3.86
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 9
-:DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 2.333
-:DRILL_EASE: 1.94
+:DRILL_TOTAL_REPEATS: 11
+:DRILL_FAILURE_COUNT: 6
+:DRILL_AVERAGE_QUALITY: 2.364
+:DRILL_EASE: 1.8
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-19 Thu 15:59]
+:DRILL_LAST_REVIEWED: [2017-10-25 Wed 11:03]
 :END:
 Reactive systems are
 
@@ -338,17 +339,17 @@ consistent behaviour in turn simplifies error handling, builds end
 user confidence, and encourages further interaction.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-25 Wed>
+SCHEDULED: <2017-10-29 Sun>
 :PROPERTIES:
 :ID:       a261e838-15df-4648-b788-16fa0bc007cd
-:DRILL_LAST_INTERVAL: 3.86
+:DRILL_LAST_INTERVAL: 3.725
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 12
-:DRILL_FAILURE_COUNT: 7
-:DRILL_AVERAGE_QUALITY: 2.417
-:DRILL_EASE: 1.8
+:DRILL_TOTAL_REPEATS: 15
+:DRILL_FAILURE_COUNT: 9
+:DRILL_AVERAGE_QUALITY: 2.4
+:DRILL_EASE: 1.66
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-21 Sat 13:08]
+:DRILL_LAST_REVIEWED: [2017-10-25 Wed 11:06]
 :END:
 Describe
 
@@ -412,21 +413,21 @@ measures.  They achieve elasticity in a cost-effective way on commodity
 hardware and software platforms.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-25 Wed>
+SCHEDULED: <2017-10-29 Sun>
 :PROPERTIES:
 :ID:       cd262b40-dc14-4613-a179-0b8411602103
-:DRILL_LAST_INTERVAL: 3.725
+:DRILL_LAST_INTERVAL: 3.86
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 17
-:DRILL_FAILURE_COUNT: 11
-:DRILL_AVERAGE_QUALITY: 2.352
-:DRILL_EASE: 1.66
+:DRILL_TOTAL_REPEATS: 20
+:DRILL_FAILURE_COUNT: 13
+:DRILL_AVERAGE_QUALITY: 2.349
+:DRILL_EASE: 1.52
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-21 Sat 13:08]
+:DRILL_LAST_REVIEWED: [2017-10-25 Wed 11:09]
 :END:
 Describe
 
-**** Message Driven
+**** Message Driven proprieties
 
 **** Short
 
@@ -485,17 +486,17 @@ processing which implies that the client only resumes its own
 execution once the service has processed the request.
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2017-10-24 Tue>
+SCHEDULED: <2017-11-09 Thu>
 :PROPERTIES:
 :ID:       cc9ec132-9a41-4dd6-aff6-d60fa239e5c6
-:DRILL_LAST_INTERVAL: 7.9786
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 14.9359
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 2.444
-:DRILL_EASE: 1.94
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 1.8
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-16 Mon 10:28]
+:DRILL_LAST_REVIEWED: [2017-10-25 Wed 11:01]
 :END:
 Describe
 
