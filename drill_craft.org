@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-10-29 Sun 21:58]
 CLOCK: [2017-10-25 Wed 11:00]--[2017-10-25 Wed 11:25] =>  0:25
 CLOCK: [2017-10-21 Sat 13:03]--[2017-10-21 Sat 13:10] =>  0:07
 CLOCK: [2017-10-19 Thu 15:57]--[2017-10-19 Thu 16:00] =>  0:03
@@ -283,17 +284,17 @@ Reactive systems are
 
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-29 Sun>
+SCHEDULED: <2017-11-05 Sun>
 :PROPERTIES:
 :ID:       de26c209-ea03-4fcf-a905-7c936d3939de
-:DRILL_LAST_INTERVAL: 3.86
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 6.7048
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 2.364
-:DRILL_EASE: 1.8
+:DRILL_AVERAGE_QUALITY: 2.417
+:DRILL_EASE: 1.66
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-25 Wed 11:03]
+:DRILL_LAST_REVIEWED: [2017-10-29 Sun 21:58]
 :END:
 Reactive systems are
 
@@ -339,17 +340,17 @@ consistent behaviour in turn simplifies error handling, builds end
 user confidence, and encourages further interaction.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-29 Sun>
+SCHEDULED: <2017-11-02 Thu>
 :PROPERTIES:
 :ID:       a261e838-15df-4648-b788-16fa0bc007cd
-:DRILL_LAST_INTERVAL: 3.725
+:DRILL_LAST_INTERVAL: 3.86
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 15
-:DRILL_FAILURE_COUNT: 9
-:DRILL_AVERAGE_QUALITY: 2.4
-:DRILL_EASE: 1.66
+:DRILL_TOTAL_REPEATS: 17
+:DRILL_FAILURE_COUNT: 10
+:DRILL_AVERAGE_QUALITY: 2.412
+:DRILL_EASE: 1.52
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-25 Wed 11:06]
+:DRILL_LAST_REVIEWED: [2017-10-29 Sun 22:01]
 :END:
 Describe
 
@@ -413,17 +414,17 @@ measures.  They achieve elasticity in a cost-effective way on commodity
 hardware and software platforms.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-10-29 Sun>
+SCHEDULED: <2017-11-04 Sat>
 :PROPERTIES:
 :ID:       cd262b40-dc14-4613-a179-0b8411602103
-:DRILL_LAST_INTERVAL: 3.86
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 20
+:DRILL_LAST_INTERVAL: 5.6626
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 21
 :DRILL_FAILURE_COUNT: 13
-:DRILL_AVERAGE_QUALITY: 2.349
-:DRILL_EASE: 1.52
+:DRILL_AVERAGE_QUALITY: 2.38
+:DRILL_EASE: 1.38
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-10-25 Wed 11:09]
+:DRILL_LAST_REVIEWED: [2017-10-29 Sun 21:59]
 :END:
 Describe
 
