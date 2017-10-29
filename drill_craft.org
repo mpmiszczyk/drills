@@ -709,3 +709,10 @@ List all
 #  LocalWords:  twosided cda bc bd
 ** TODO Pragmatic Programmer
 SCHEDULED: <2017-10-13 Fri>
+
+
+# Local Variables:
+# org-drill-maximum-items-per-session:    50
+# org-drill-spaced-repetition-algorithm:  simple8
+# setq org-drill-learn-fraction: 0.27
+# End:
