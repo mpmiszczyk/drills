@@ -1,0 +1,20 @@
+* inbox
+** TODO join lines
+** TODO drill org-mode templates
+  [2017-09-30 Sat]
+  ~<s~ and ~<TAB>~ will expand to
+  #+BEGIN_SRC 
+  #+BEGIN_SRC 
+  
+  #+END_SRC
+  #+END_SRC
+
+  same for quote with `<q`
+
+  http://orgmode.org/manual/Easy-Templates.html
+
+
+* emacs
+* org-mode
+* magit
+* 

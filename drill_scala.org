@@ -1,0 +1,70 @@
+* inbox
+** TODO drill scala ~implicit~ 
+  [2017-09-30 Sat]
+  from where argument will be taken
+  - context, in recursion
+  - ?find object of type?
+** TODO drill scala higher order list functions
+  [2017-09-30 Sat]
+  
+*** map
+*** filter
+*** filterNot
+*** partition
+*** takeWhile
+*** dropWhile
+*** span
+*** reduceLeft
+can be define just as foldLeft
+**** sum and product
+by adding zero-element
+#+BEGIN_SRC scala
+def sum(xs: List[Int]): List[Int] = (0 :: xs) reduceLeft((x,y) => x+y)
+def sum(xs: List[Int]): List[Int] = (0 :: xs) reduceLeft(_+_)
+// zero nedded to handle one-element function
+def product(xs: List[Int]): List[Int] = (1 :: xs) reduceLeft((x,y) => x*y)
+def product(xs: List[Int]): List[Int] = (1 :: xs) reduceLeft(_*_)
+#+END_SRC
+*** foldLeft
+#+BEGIN_SRC scala
+def sum(xs: List[Int]): List[Int] = (xs foldLeft 0)(_+_)
+def product(xs: List[Int]): List[Int] = (xs foldLeft 1)(_*_)
+def product(xs: List[Int]): List[Int] = (xs foldLeft 1)((acc, x) => acc * x)
+
+class List[T]{
+  ...
+  def foldLeft[U](acc: U)(implicit operator: (U,T) => U): U = this match {
+    case Nil => acc
+    case x :: xs => xs foldLeft(operator(acc, x))
+  }
+}
+#+END_SRC
+*** reduceRight
+*** foldRight
+**** concat function as foldRight
+** TODO drill scala collections
+*** Iterable
+**** Sequance
+***** List
+***** Vector
+With ~+:~ and ~:+~
+**** Setff
+**** Map
+*** Array
+*** Strin
+*** Range
+*** function
+**** exists
+**** forall
+**** zip
+how long!! -> shorter of two
+**** flatMap
+map that return lists, which are flattened.
+**** for yield
+
+** TODO drill scala collections
+** TODO drill Scala implicit conversion
+  [2017-10-03 Tue]
+  [[file:~/code/scala/mooc_3/parallel_JVM.org::*Implicit%20conversion][Implicit conversion]]
+
+* 
