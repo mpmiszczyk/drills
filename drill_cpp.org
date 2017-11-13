@@ -1,0 +1,1174 @@
+* C++                                                                   :cpp:
+
+** What will print and why                                           :drill:
+:PROPERTIES:
+:ID:       59c3a8dd-9b57-41fa-ace9-e3c273dbdc1f
+:END:
+#+BEGIN_SRC c++
+#include <iostream>
+
+int main(int argc, char **argv)
+{
+    std::cout << 25u - 50;
+    return 0;
+}
+#+END_SRC
+
+*** Answer
+
+The answer is not -25. Rather, the answer (which will surprise many)
+is 4294967271, assuming 32 bit integers. Why?
+
+In C++, if the types of two operands differ from one another, then the
+operand with the “lower type” will be promoted to the type of the
+“higher type” operand, using the following type hierarchy (listed here
+from highest type to lowest type): long double, double, float,
+unsigned long int, long int, unsigned int, int (lowest).
+
+So when the two operands are, as in our example, 25u (unsigned int)
+and 50 (int), the 50 is promoted to also being an unsigned integer
+(i.e., 50u).
+
+Moreover, the result of the operation will be of the type of the
+operands. Therefore, the result of 25u - 50u will itself be an
+unsigned integer as well. So the result of -25 converts to 4294967271
+when promoted to being an unsigned integer.
+
+** Give example of "diamond problem"                                 :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:44]
+:ID:       d90e29fa-88de-4d43-8327-4d29f0e5e256
+:END:
+What it is, when it occur?
+
+*** Short
+
+- will not compile
+- can fix by ~virtual~ inheritance
+
+*** Answer
+
+
+It means that we cannot create hybrid inheritance using multiple and
+hierarchical inheritance.
+
+Let’s consider a simple example. A university has people who are
+affiliated with it. Some are students, some are faculty members, some
+are administrators, and so on. So a simple inheritance scheme might
+have different types of people in different roles, all of whom inherit
+from one common ~Person~ class. The Person class could define an
+abstract ~getRole()~ method which would then be overridden by its
+subclasses to return the correct role type.
+
+But now what happens if we want to model a the role of a Teaching
+Assistant (~TA~)? Typically, a TA is both a grad student and a faculty
+member. This yields the classic diamond problem of multiple
+inheritance and the resulting ambiguity regarding the TA’s ~getRole()~
+method:
+
+
+
+(Note the diamond shape of the above inheritance diagram, hence the
+name.)
+
+Which getRole() implementation should the TA inherit? That of the
+Faculty Member or that of the Grad Student? The simple answer might be
+to have the TA class override the ~getRole()~ method and return
+newly-defined role called ~TA~. But that answer is also imperfect as
+it would hide the fact that a TA is, in fact, both a faculty member
+and a grad student.
+** Describe the error                                                :drill:
+:PROPERTIES:
+:ID:       42f65bd3-08c6-465c-953c-495d1def4925
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:47]
+:END:
+And explain when will it occure
+#+BEGIN_SRC c++
+my_struct_t *bar;
+/* ... do stuff, including setting bar to point to a defined my_struct_t object ... */
+memset(bar, 0, sizeof(bar));
+#+END_SRC
+*** Answer
+
+The last argument to memset should be ~sizeof(*bar)~, not
+~sizeof(bar)~. ~sizeof(bar)~ calculates the size of ~bar~ (i.e., the pointer
+itself) rather than the size of the structure pointed to by ~bar~.
+
+The code can therefore be corrected by using ~sizeof(*bar)~ as the last
+argument in the call to memset.
+
+A sharp candidate might point out that using ~*bar~ will cause a
+dereferencing error if bar has not been assigned. Therefore an even
+safer solution would be to use ~sizeof(my_struct_t)~. However, an even
+sharper candidate must know that in this case using ~*bar~ is absolutely
+safe within the call to ~sizeof~, even if bar has not been initialized
+yet, since ~sizeof~ is a compile time construct.
+*** Bonus: what is ~memset~
+#+BEGIN_SRC c++
+void * memset ( void * ptr, int value, size_t num );
+#+END_SRC
+Sets the first ~num~ bytes of the block of memory pointed by ~ptr~ to the
+specified ~value~ (interpreted as an *unsigned char*).
+** What is the problem                                               :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       356b34d7-8df2-4e27-a010-f6391bd9036d
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:46]
+:END:
+assume ~buf~ is a valid pointer; how to fix it?
+#+BEGIN_SRC c++
+size_t sz = buf->size();
+while ( --sz >= 0 )
+{
+  /* do something */
+}
+#+END_SRC
+*** Short
+~size_t~ is ~unsigned~ and will always be ~>= 0~; ~while~ will not
+terminate.
+
+Use ~do {...} while( --sz > 0)~
+*** Answer
+The problem in the above code is that ~--sz >= 0~ will always be true so
+you’ll never exit the ~while~ loop (so you’ll probably end up corrupting
+memory or causing some sort of memory violation or having some other
+program failure, depending on what you’re doing inside the loop).
+
+The reasons that ~--sz >= 0~ will always be true is that the type of ~sz~
+is ~size_t~. ~size_t~ is really just an alias to one of the fundamental
+~unsigned integer~ types. Therefore, since ~sz~ is unsigned, it can *never*
+be less than zero (so the condition can never be true).
+
+One example of an alternative implementation that would avoid this
+problem would be to instead use a for loop as follows:
+#+BEGIN_SRC c++
+for (size_t i = 0; i < sz; i++) {
+   /* do something */
+}
+#+END_SRC
+** Consider both                                                     :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       208a0833-e8de-4e35-bd68-0c7c39af17d6
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:49]
+:END:
+What is adwantage of one over the other:
+#+BEGIN_SRC c++
+vector vec;
+/* ... .. ... */
+for (auto itr = vec.begin(); itr != vec.end(); itr++) {
+  itr->print();
+}
+#+END_SRC
+#+BEGIN_SRC c++
+vector vec;
+/* ... .. ... */
+for (auto itr = vec.begin(); itr != vec.end(); ++itr) {
+  itr->print();
+}
+#+END_SRC
+*** Short
+advantage of ~++i~ over ~i++~
+
+ - ~++i~ is less expensive
+ - ~i++~ will make copy of ~i~, increment it, and return the copy
+*** Answer
+
+Although both options will accomplish precisely the same thing, the
+second option is better from a performance standpoint. This is because
+the post-increment operator (i.e., ~itr++~) is more expensive than
+pre-increment operator (i.e., ~++itr~). The underlying implementation of
+the post-increment operator makes a copy of the element before
+incrementing it and then returns the copy.
+
+That said, many compilers will automatically optimize the first option
+by converting it into the second.
+** Implement a template function                                     :drill:
+:PROPERTIES:
+:ID:       b3d1ce5d-c8fc-426f-b7b9-c52da25a8ae9
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:51]
+:END:
+~IsDerivedFrom()~ should take class ~C~ and class ~P~ as tmplate
+parameters, and should return ~true~ when ~C~ is derived form ~P~
+*** Answer ??
+This question tests understanding of C++ templates. An experienced
+developer will know that this is already a part of the C++11 std
+library (~std::is_base_of~) or part of the boost library for C++
+(~boost::is_base_of~). Even an interviewee with only passing knowledge
+should write something similar to this, mostly likely involving a
+helper class:
+
+#+BEGIN_SRC c++
+template<typename D, typename B>
+class IsDerivedFromHelper
+{
+    class No { };
+    class Yes { No no[3]; };
+
+    static Yes Test( B* );
+    static No Test( ... );
+public:
+    enum { Is = sizeof(Test(static_cast<D*>(0))) == sizeof(Yes) };
+
+};
+
+
+template <class C, class P>
+bool IsDerivedFrom() {
+    return IsDerivedFromHelper<C, P>::Is;
+}
+#+END_SRC
+** Implement a templete                                              :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       ed4d58e6-1594-4e2c-87b8-ac3193047703
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:56]
+:END:
+~Issameclass()~ that will take class ~A~ and ~B~, and return ~true~ if
+they are the same class.
+*** Answer
+#+BEGIN_SRC c++
+template <typename T, typename U>
+struct is_same
+{
+    static const bool value = false;
+};
+
+template <typename T>
+struct is_same<T, T>
+{
+    static const bool value = true;
+};
+
+
+template <class A, class B>
+bool IsSameClass() {
+    return is_same<A, B>::value;
+}
+#+END_SRC
+** Is is possible to have a recursive inline functions?              :drill:
+:PROPERTIES:
+:ID:       68fc2f09-7c53-406a-99e5-dfeb4ee9834d
+:END:
+*** Answer
+Although you can call an inline function from within itself, the
+compiler may not generate inline code since the compiler cannot
+determine the depth of recursion at compile time. A compiler with a
+good optimizer can inline recursive calls till some depth fixed at
+compile-time (say three or five recursive calls), and insert
+non-recursive calls at compile time for cases when the actual depth
+gets exceeded at run time.
+** What is the output of the following code:                         :drill:
+:PROPERTIES:
+:ID:       d41dcc2a-4efb-44dd-894b-05929c683cba
+:END:
+#+BEGIN_SRC c++
+#include <iostream>
+
+class A {
+   public:
+       A() {}
+       ~A() {
+           throw 42;
+       }
+};
+
+int main(int argc, const char * argv[]) {
+    try {
+        A a;
+        throw 32;
+    } catch(int a) {
+        std::cout << a;
+    }
+}
+#+END_SRC
+*** Answer
+This program will terminate abnormally. ~throw 32~ will start unwinding
+the stack and destroy class ~A~. The class A destructor will throw
+another exception during the exception handling, which will cause
+program to crash. This question is testing if developer has experience
+working with exceptions.
+** Implement a method                                                :drill:
+:PROPERTIES:
+:ID:       18e41f5e-2aa2-4edc-a82d-f7e6a6c3f337
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:57]
+:END:
+#+BEGIN_SRC c++
+class Something {
+public:
+    Something() {
+        topSecretValue = 42;
+    }
+    bool somePublicBool;
+    int somePublicInt;
+    std::string somePublicString;
+private:
+    int topSecretValue;
+};
+#+END_SRC
+Implement a methong to get ~topSecretValue~ for any given ~Someting*~
+object.
+
+*** Answer
+Create another class which has all the members of Something in the
+same order, but has additional public method which returns the
+value. Your replica Something class should look like:
+
+#+BEGIN_SRC c++
+class SomethingReplica {
+public:
+    int getTopSecretValue() { return topSecretValue; }
+    bool somePublicBool;
+    int somePublicInt;
+    std::string somePublicString;
+private:
+    int topSecretValue;
+};
+#+END_SRC
+Then, to get the value:
+
+#+BEGIN_SRC c++
+int main(int argc, const char * argv[]) {
+    Something a;
+    SomethingReplica* b = reinterpret_cast<SomethingReplica*>(&a);
+    std::cout << b->getTopSecretValue();
+}
+#+END_SRC
+It’s important to avoid code like this in a final product, but it’s
+nevertheless a good technique when dealing with legacy code, as it can
+be used to extract intermediate calculation values from a library
+class. (Note: If it turns out that the alignment of the external
+library is mismatched to your code, you can resolve this using ~#pragma
+pack.~)
+** Implement                                                         :drill:
+:PROPERTIES:
+:ID:       859bde67-1910-4b53-ab80-be6a7c74a12c
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:45]
+:END:
+Function ~f~ takes two pointers to two arrays of integers ~A~ and ~B~, and size as
+paratemter.  Then it populates ~B~ where ~B[i]~ is the product of all
+~A[j]~ where ~j!=i~
+*** Short
+Descripotino is awfoul, and it is due to imperative nature of
+language.
+
+All one have to do is remember to protect yourself against zero, and
+all will be fine
+*** Answer
+This problem seems easy at first glance so a careless developer might
+write something like this:
+
+#+BEGIN_SRC c++
+void F(int* A, int* B, int N) {
+    int m = 1;
+    for (int i = 0; i < N; ++i) {
+        m *= A[i];
+    }
+
+    for (int i = 0; i < N; ++i) {
+        B[i] = m / A[i];
+    }
+}
+#+END_SRC
+This will work for the given example, but when you add a 0 into input
+array A, the program will crash because of division by zero. The
+correct answer should take that edge case into account and look like
+this:
+#+BEGIN_SRC c++
+void F(int* A, int* B, int N) {
+    // Set prod to the neutral multiplication element
+    int prod = 1;
+
+    for (int i = 0; i < N; ++i) {
+        // For element "i" set B[i] to A[0] * ... * A[i - 1]
+        B[i] = prod;
+        // Multiply with A[i] to set prod to A[0] * ... * A[i]
+        prod *= A[i];
+    }
+
+    // Reset prod and use it for the right elements
+    prod = 1;
+
+    for (int i = N - 1; i >= 0; --i) {
+        // For element "i" multiply B[i] with A[i + 1] * ... * A[N - 1]
+        B[i] *= prod;
+        // Multiply with A[i] to set prod to A[i] * ... * A[N - 1]
+        prod *= A[i];
+    }
+}
+#+END_SRC
+The presented solution above has a Big O complexity of ~O(N)~. While
+there are simpler solutions available (ones that would ignore the need
+to take ~0~ into account), that simplicity has a price of complexity,
+generally running significantly slower.
+** When you shold use virtual ingeritance?                           :drill:
+:PROPERTIES:
+:ID:       bac8fb35-2e96-4b34-9e74-29ffaa188d6c
+:END:
+*** Answer
+While it’s ideal to avoid virtual inheritance altogether (you should
+know how your class is going to be used) having a solid understanding
+of how virtual inheritance works is still important:
+
+So when you have a class (class ~A~) which inherits from 2 parents (~B~
+and ~C~), both of which share a parent (class ~D~), as demonstrated below:
+
+#+BEGIN_SRC c++
+  #include <iostream>
+
+  class D {
+  public:
+      void foo() {
+          std::cout << "Foooooo" << std::endl;
+      }
+  };
+
+
+  class C:  public D {
+  };
+
+  class B:  public D {
+  };
+
+  class A: public B, public C {
+  };
+
+  int main(int argc, const char * argv[]) {
+      A a;
+      a.foo();
+  }
+  If you don’t use virtual inheritance in this case, you will get two copies of D in class A: one from B and one from C. To fix this you need to change the declarations of classes C and B to be virtual, as follows:
+
+  class C:  virtual public D {
+  };
+
+  class B:  virtual public D {
+  };
+
+#+END_SRC
+** Is there a difference between ~class~ and ~struct~?               :drill:
+:PROPERTIES:
+:ID:       0b460eae-8055-4eac-84e1-f1195a77c7db
+:END:
+*** Answer
+The only difference between a class and struct are the access
+modifiers. Struct members are ~public~ by default; class members are
+~private~. It is good practice to use classes when you need an object
+that has methods and structs when you have a simple data object.
+** What is the output of the following code?                         :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       99361c3e-7411-4ca8-a3d8-2d0365b16a21
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:45]
+:END:
+#+BEGIN_SRC c++
+  #include <iostream>
+
+  int maint(int argc, const char * argv[]){
+    int a[] = {1,2,3,4,5,6};
+    stad::count << (1+3)[a] - a[0] + (a+1)[2];
+  }
+#+END_SRC
+*** Answer
+
+The above will output 8, since:
+
+~(1+3)[a]~ is the same as ~a[1+3] == 5~
+
+~a[0] == 1~
+
+~(a + 1)[2]~ is the same as ~a[3] == 4~
+
+This question is testing pointer arithmetic knowledge, and the magic
+behind square brackets with pointers.
+
+While some might argue that this isn’t a valuable question as it
+appears to only test the capability of reading C constructs, it’s
+still important for a candidate to be able to work through it
+mentally; it’s not an answer they’re expected to know off the top of
+their head, but one where they talk about what conclusion they reach
+and how.
+** What is the output of the following code?                         :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       c8de4e2b-3311-4df7-80e7-b0bbac3c279f
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:55]
+:END:
+#+BEGIN_SRC c++
+  #include <iostream>
+
+  class Base {
+    virtual void method() {
+      std::count << "from Base" << std:endl;
+    }
+  public:
+    virtual ~Base(){
+      method();
+    }
+    void baseMethod() {
+      method();
+    }
+  };
+
+  class A: public Base {
+    void method() {
+      std::cout << "from A" << std::endl;
+    }
+  public:
+    ~A(){method();}
+  };
+
+  int main() {
+    Base* base = new A;
+    base->baseMethod();
+    delete base;
+    return 0;
+  }
+#+END_SRC
+*** Answer
+The above will output:
+#+BEGIN_EXPORT ascii
+from A
+from A
+from Base
+#+END_EXPORT
+The important thing to note here is the order of destruction of
+classes and how ~Base~ ’s method reverts back to its own implementation
+once ~A~ has been destroyed.
+** Explain the ~volatile~ and ~mutable~ keywords                     :drill:
+:PROPERTIES:
+:ID:       e3c04b56-81b0-4b58-a8b7-5d6484690db6
+:END:
+*** Answer
+The ~volatile~ keyword informs the compiler that a variable will be used
+by multiple threads. Variables that are declared as volatile will not
+be cached by the compiler to ensure the most up-to-date value is held.
+
+The ~mutable~ keyword can be used for class member variables. Mutable
+variables are allowed to change from within ~const~ member functions of
+the class.
+** How many times till this loop execute?                            :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       25e827de-dec9-4118-a6ac-2517e535a67b
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:45]
+:END:
+#+BEGIN_SRC c++
+  unsigned char half_limit = 150;
+
+  for (unsigned char i = 0; i < 2 * half_limit; ++i){
+    // do something
+   }
+#+END_SRC
+*** Answer
+If you said 300, you would have been correct if ~i~ had been declared as
+an ~int~. However, since ~i~ was declared as an ~unsigned char~, the corrct
+answer is that this code will result in an infinite loop.
+
+Here’s why:
+
+The expression ~2 * half_limit~ will get promoted to an ~int~ (based on
+C++ conversion rules) and will have a value of 300. However, since ~i~
+is an ~unsigned char~, it is rerepsented by an 8-bit value which, after
+reaching 255, will overflow (so it will go back to 0) and the loop
+will therefore go on forever.
+** Call by specific type                                             :drill:
+:PROPERTIES:
+:ID:       aa9e8053-a2f5-4867-848f-f1a29fd167fd
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:53]
+:END:
+How can you make sure a C++ function can be called as ~void foo(int,
+int)~ but not as any other type like ~void foo(long, long)~?
+*** Answer
+Implement ~foo(int, int)~
+#+BEGIN_SRC c++
+  void foo(int a, int b) {
+    //
+  }
+#+END_SRC
+... and delete all others through a template:
+#+BEGIN_SRC c++
+  template <typname T1, typname T1> void foo(T1 a, T2 b) = delete;
+#+END_SRC
+Or without the ~delete~ keyword:
+#+BEGIN_SRC c++
+  templete <class T, class U>
+  void foo(T a, U b);
+
+  templete <>
+  void foo(int a, int b) {
+    //
+  }
+#+END_SRC
+** What's the problem with the following code?                       :drill:
+:PROPERTIES:
+:ID:       04b14574-abfa-4382-90e9-4bbd3a432514
+:END:
+#+BEGIN_SRC c++
+  class A {
+  public:
+    A() {}
+    ~A() {}
+  };
+
+  class B: public A {
+  public:
+    B(): A(){}
+    ~B(){}
+  };
+
+  int main() {
+    A* a = new B();
+    delete a;
+  }
+#+END_SRC
+*** Answer
+The behavior is undefined because ~A~ ’s destructor is not virtual. From
+the spec:
+
+#+BEGIN_QUOTE
+( C++11 §5.3.5/3 ) if the static type of the object to be deleted is
+different from its dynamic type, the static type shall be a base class
+of the dynamic type of the object to be deleted and the static type
+shall have a virtual destructor or the behavior is undefined.
+#+END_QUOTE
+** Are you allowed to have a ~static const~ member function?         :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       59e15024-d8b0-4755-a56a-c2ed43fc70ce
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:51]
+:END:
+Explain your answer.
+*** Answer
+
+A ~const~ member function is one which isn’t allowed to modify the
+members of the object for which it is called. A ~static~ member function
+is one which can’t be called for a specific object.
+
+Thus, the ~const~ modifier for a ~static~ member function is meaningless,
+because there is no object associated with the call.
+
+A more detailed explanation of this reason comes from the C
+programming language. In C, there were no classes and member
+functions, so all functions were global. A member function call is
+translated to a global function call. Consider a member function like
+this:
+#+BEGIN_SRC c
+void foo(int i);
+#+END_SRC
+A call like this:
+#+BEGIN_SRC c++
+obj.foo(10);
+#+END_SRC
+is translated to this:
+#+BEGIN_SRC c
+foo(&obj, 1);
+#+END_SRC
+This means that the member function ~foo~ has a hidden first argument
+of type ~T*~:
+#+BEGIN_SRC c
+void foo(T* const this, int i);
+#+END_SRC
+If a memeber function is ~const~, ~this~ is of type ~const T* const
+this~. Static memeber fucntions don't have such a hidden argument, so
+there is no ~this~ pointer to be ~const~ or not.
+** What is storage class?                                            :drill:
+:PROPERTIES:
+:ID:       44074ef1-339b-4983-b3cb-d7a1a9188706
+:END:
+*** Answer
+A class that specifies the life and scope of its variables and
+functions is called a storage class.
+
+In C++ following the storage classes are supported: ~auto~, ~static~,
+~register~, ~extern~, and ~mutable~.
+
+Note, however, that the keyword ~register~ was deprecated in C++11. In
+C++17, it was removed and reserved for future use.
+** How can a C function be called in C++ program?                    :drill:
+:PROPERTIES:
+:ID:       263d85d3-4254-47f0-ab84-fb4c8b32da44
+:END:
+*** Answer
+Using ~extern "C"~ declaration
+#+BEGIN_SRC C
+void func(int i) {
+  //
+}
+void pring(int i){
+  //
+}
+#+END_SRC
+#+BEGIN_SRC c++
+  extern "C" {
+    void func(int i);
+    void print(int i);
+  }
+
+  void my_func(int i){
+    func(i);
+    print(i);
+  }
+#+END_SRC
+** What will be the output of the following program?                 :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       a85e40fb-a697-4638-a3af-860c11f9fa67
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:50]
+:END:
+#+BEGIN_SRC c++
+  #include <iostream>
+
+  struct A{
+    int data[2];
+    A(int x, int y) : data{x, y} {}
+    virtual void f() {}
+  };
+
+  int main(int argc, char **argv) {
+    A a(22,33);
+
+    int *arr = (int*) &a;
+    std::cout << arr[2] << std::endl;
+
+    return 0;
+  }
+#+END_SRC
+*** Answer
+In the main function the instance of struct ~A~ is treated as an array
+of integer values. On 32-bit architectures the output will be *33*, and
+on 64-bit architectures it will be *22*. This is because there is
+virtual method ~f()~ in the struct which makes compiler insert a vptr
+pointer that points to vtable (a table of pointers to virtual
+functions of class or struct). On 32-bit architectures the ~vptr~ takes
+4 bytes of the struct instance and the rest is the data array, so
+~arr[2]~ represents access to second element of the data array, which
+holds value ~33~. On 64-bit architectures the ~vptr~ takes 8 bytes so
+~arr[2]~ represents access to the first element of the data array, which
+holds ~22~.
+
+This question is testing knowledge of virtual functions internals, and
+knowledge of C++11-specific syntax as well, because the constructor of
+A uses the extended initializer list of the C++11 standard.
+
+Compiled with:
+#+BEGIN_SRC shell
+  g++ question_vptr.cpp -m32 -std=c++11
+  g++ question_vptr.cpp -std=c++11
+#+END_SRC
+** What are the differences between references and pointers?         :drill:
+:PROPERTIES:
+:ID:       7daa68e4-942c-44b5-beb3-c6eab8888f79
+:END:
+*** answer
+**** references are less powerful
+- one a referecne is created it cannot be later made to reference
+  another object; it cannot be reseated.
+- rererences cannot be NULL; pointer are often made NULL to indicate
+  that they are not pointing to any valid thing.
+- a reference must be initialized when declered
+**** references are easier to use
+- safer
+  Since references must be initialized, they are ulikely to point to
+  invalid locations
+- easier:
+  They don't need dereferencint operator to acess the value, and can
+  be used like noraml variables, ~&~ is needed only at the time of
+  declaration.
+** What are virtual functions?                                       :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       766ca0bc-5b40-4c1a-bef2-cce604bd0c68
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:49]
+:END:
+Write an example
+*** answer
+- they are used with inheritance
+- they are called according to the type of object pointed or referred,
+  not according to the type of pointer or reference.  In other words,
+  virtual functions are resolved late, at runtime.
+- ~virtual~ keyword is used to make a function virtual
+- they use array of pointers to functions sitting at the begginging of
+  class
+
+#+BEGIN_SRC c++
+  #include <iostream>
+  using namespace std;
+
+  class Base{
+  public:
+    virtual void show(){
+      cout << "In Base" << endl;
+    }
+  };
+
+  class derived: public Base {
+  public:
+    void show() {
+      cout << "In Derived" << endl;
+    }
+  };
+
+  int main(void) {
+
+    Base *bp = new derived;
+    bp->show(); // will pring "In Derived"
+    return 0;
+  }
+#+END_SRC
+** What is this pointer                                              :drill:
+:PROPERTIES:
+:ID:       881d3592-945f-45e8-8891-5fa3dd056ec0
+:END:
+*** answer
+it is an hidden argument passed to all *nonstatic* memeber funcion
+(method) calls.  It is avalible as a local variable withing the body
+of all nonstatic function.  ~this~ pointer is a ~const~ pointer.
+** What is ~VTABLE~ and ~VPTR~                                       :drill:
+:PROPERTIES:
+:ID:       4ddbe463-64b5-4ade-93da-9ac3d9388f46
+:END:
+*** answer
+~vtable~ is a table of function pointers. It is maintained per class.
+~vptr~ is a pointer to vtable. It is maintained per object (See this for
+an example).
+** What are C++ access specifiers?                                   :drill:
+:PROPERTIES:
+:ID:       c0fa7278-147b-4896-b1ac-3cf078dff1c6
+:END:
+*** answer
+- ~privete~
+  Members declared as private are accessible only within the
+  same class and they cannot be accessed outside the class they are
+  declared. Child classes are also not allowed to access private
+  members of parent.
+
+- ~public~
+  Members declared as public are accessible from anywhere
+
+- ~protected~
+  Only the class and its child classes can access protected members
+** ~malloc~ vs ~new~ / ~delete~ vs ~free~                            :drill:
+:PROPERTIES:
+:ID:       02bd0727-c593-4e99-bb7c-384871eb7c85
+:END:
+*** answer
+Following are the differences between malloc() and operator new.
+
+ - ~new~ is an operator, while ~malloc()~ is a function.
+ - ~new~ returns exact data type, while ~malloc()~ returns ~void *~.
+ - ~new~ calls constructors( class instances are initalized and deinitialized automatically), while malloc() does not( classes won’t get initalized or deinitialized automatically
+ - Syntax:
+   #+BEGIN_SRC c++
+     int *n = new int(10); // initialization with new()
+     str = (char *) malloc(15); //malloc()
+   #+END_SRC
+ - ~free()~ is used on resources allocated by ~malloc()~, or ~calloc()~
+ - ~delete~ is used on resources allocated by ~new~
+** Describe inline functions                                         :drill:
+:PROPERTIES:
+:ID:       866a4e16-3ac0-4dfb-aa28-9ee2fb22570b
+:END:
+*** answer
+C++ provides an inline functions to reduce the function call
+overhead. Inline function is a function that is expanded in line when
+it is called. When the inline function is called whole code of the
+inline function gets inserted or substituted at the point of inline
+function call.
+
+This substitution is performed by the C++ compiler at
+compile time. Inline function may increase efficiency if it is small.
+#+BEGIN_SRC c++
+  inline return_type function_name(..parameters..){
+    //body
+  }
+#+END_SRC
+** Describe Function overloading                                     :drill:
+:PROPERTIES:
+:ID:       69f725a2-4dc7-49f9-aa70-421bb30b7e16
+:END:
+*** answer
+Two or more functions can have the same name but different type of
+parameters and different number of parameters.
+
+/Overloading of functions with different return tpes are not allowed/
+** pWhat is Static Member?                                           :drill:
+:PROPERTIES:
+:ID:       c76a5961-8009-4899-b74e-452829094ce1
+:END:
+*** answer
+~static~ is a keyword in C++ used to give special characteristics to an
+element.  Static elements are allocated storage only once in a program
+lifetime in static storage area. And they have a scope till the
+program lifetime. Static Keyword can be used with following,
+ - ~static~ members does not have ~this~ pointer
+ - ~static~ member can not be virtual
+ - ~static~ can not be overriten, only overloaded
+ - ~static~ can not be declared ~const~ or ~volatile~
+** What is class of storage?                                         :drill:
+:PROPERTIES:
+:ID:       aa63af99-e7e9-4a5e-bc1f-6af6596a4c59
+:END:
+*** answer
+It defines visibility/scope of any given variable.
+- ~auto~
+  #+BEGIN_SRC c++
+    auto int i = 1;
+  #+END_SRC
+  Alocated at the beggining of the block, and dealocated at the end of
+  it.  Stack variable.
+- ~register~
+  #+BEGIN_SRC c++
+    register int i;
+  #+END_SRC
+  Can be alocated in CPU registery
+- ~static~
+  #+BEGIN_SRC c++
+    void count() {
+      static int i = 1;
+      std::cout << ++i << std::end;
+    };
+
+    count(); // 0
+    count(); // 1
+    count(); // 2
+  #+END_SRC
+  Allocated in static memory, just like function definition.
+
+  In case of use with global variables, they will have internal linkeage
+  (to access in other source files you need to use ~extern~ keyword).
+
+  In cas of use with class member or function it will be shared across
+  all instances of object/funcion.
+- ~extern~
+  Memory defined in another translation unit (other file)
+- ~mutable~
+  Variable can be modified even on ~const~ objects ....
+** Describe difference between shallow copy and deep copy            :drill:
+:PROPERTIES:
+:ID:       3063fc9a-21df-45c4-91f1-46d30d23070b
+:END:
+*** answer
+When you do a shallow copy, all the fields of the source object is
+copied to target object as it is. That means, if there is a
+dynamically created field in the source object, shallow copy will copy
+the same pointer to target object. So you will have two objects with
+fields that are pointing to same memory location which is not what you
+usually want.
+
+In case of deep copy, instead of copying the pointer,
+the object itself is copied to target. In this case if you modify the
+target object, it will not affect the source.
+
+*** which is default?
+
+By default copy constructors and assignment operators do shallow
+copy. To make it as deep copy, you need to create a custom copy
+constructor and override assignment operator.
+
+** What is Pure Virtual Function                                     :drill:
+:PROPERTIES:
+:ID:       71dad61d-1e94-4719-81d1-14e3f77e677d
+:END:
+*** answer
+Pure virtual function is a function which doesn't have an
+implementation and the same needs to be implemented by the the next
+immediate non-abstract class.  (A class will become an abstract class
+if there is at-least a single pure virtual function and thus pure
+virtual functions are used to create interfaces in c++).
+
+#+BEGIN_SRC c++
+  class SomeClassThatWillBecomeAbstract{
+  public:
+    virtual void some_method() = 0:
+  }
+#+END_SRC
+** What is reference variable                                        :drill:
+:PROPERTIES:
+:ID:       a58dd235-d06b-49ae-9ba1-7aea99c500a5
+:END:
+*** answer
+It is  an alias, another name for variable, same memory.
+** What is default constructor?                                      :drill:
+:PROPERTIES:
+:ID:       94bccfca-11a5-4c68-913a-5df29da55713
+:END:
+*** answer
+Every class does have a constructor provided by the compiler if the
+programmer doesn’t provides one and known as default constructor.  A
+programmer provided constructor with no parameters is called as
+default constructor. In such case compiler doesn’t provides the
+constructor.
+** Can I use ~delete~ with ~malloc()~?                               :drill:
+SCHEDULED: <2017-11-17 Fri>
+:PROPERTIES:
+:ID:       c8148b9c-16ec-4175-8436-7c76b49e6b91
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:56]
+:END:
+Can I use ~delete~ operator to release the memory which was allocated using ~malloc()~?
+*** answer
+No, we need to use ~free()~ of C language for the same.
+** Is copy constructor same thing as ~operator=~                     :drill:
+:PROPERTIES:
+:ID:       628c381b-0d03-469f-96cf-ee2c8d1e8c59
+:END:
+*** answer
+They are different operators.
+
+The copy constructor is *for creating a new object*. It copies a
+existing object to a newly constructed object.The copy constructor is
+used to initialize a new instance from an old instance. It is not
+necessarily called when passing variables by value into functions or
+as return values out of functions.
+
+The assignment operator is deal with an *already existing
+object*. The assignment operator is used to change an existing instance
+to have the same values as the rvalue, which means that the instance
+has to be destroyed and re-initialized if it has internal dynamic
+memory.
+** What is The Rule of Three?                                        :drill:
+:PROPERTIES:
+:ID:       d9559174-ceff-4a1a-99bd-90f5828accd6
+:END:
+*** answer
+** What is The Rule of Zero?                                         :drill:
+:PROPERTIES:
+:ID:       756b6304-26d0-439a-9b46-330dc615a074
+:END:
+*** answer
+** What is Member initialization List?                               :drill:
+:PROPERTIES:
+:ID:       f9517d01-d4d7-4d33-8f58-5169789ddf71
+:END:
+*** answer
+It is a way to initialize some fields of your object (all of them, if
+you want) with values of your choice, instead of leaving them as
+undefined.
+
+After executing the initialization list, the constructor body is executed.
+** How to create and deleta an arry?                                 :drill:
+:PROPERTIES:
+:ID:       016068c4-fdb4-4bf9-9013-b039655f45a7
+:END:
+*** answer
+You create it with ~new type[size]~.  And delete it with ~delete[] pointer~.
+* COMMENT _ local vars
+# Local Variables:
+# org-drill-maximum-items-per-session:    30
+# org-drill-spaced-repetition-algorithm:  simple8
+# org-drill-learn-fraction: 0.23
+# org-drill-add-random-noise-to-intervals-p: t
+# End:
