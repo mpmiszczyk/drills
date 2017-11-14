@@ -1,8 +1,17 @@
 * C++                                                                   :cpp:
 
 ** What will print and why                                           :drill:
+SCHEDULED: <2017-11-16 Thu>
 :PROPERTIES:
 :ID:       59c3a8dd-9b57-41fa-ace9-e3c273dbdc1f
+:DRILL_LAST_INTERVAL: 2.3586
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.456
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:12]
 :END:
 #+BEGIN_SRC c++
 #include <iostream>
@@ -86,16 +95,17 @@ newly-defined role called ~TA~. But that answer is also imperfect as
 it would hide the fact that a TA is, in fact, both a faculty member
 and a grad student.
 ** Describe the error                                                :drill:
+SCHEDULED: <2017-11-16 Thu>
 :PROPERTIES:
 :ID:       42f65bd3-08c6-465c-953c-495d1def4925
-:DRILL_LAST_INTERVAL: 0.0
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 2.2122
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 2
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:47]
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.215
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:00]
 :END:
 And explain when will it occure
 #+BEGIN_SRC c++
@@ -213,16 +223,17 @@ incrementing it and then returns the copy.
 That said, many compilers will automatically optimize the first option
 by converting it into the second.
 ** Implement a template function                                     :drill:
+SCHEDULED: <2017-11-16 Thu>
 :PROPERTIES:
 :ID:       b3d1ce5d-c8fc-426f-b7b9-c52da25a8ae9
-:DRILL_LAST_INTERVAL: 0.0
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 2.3821
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 1.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 1
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:51]
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 1.926
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 21:57]
 :END:
 ~IsDerivedFrom()~ should take class ~C~ and class ~P~ as tmplate
 parameters, and should return ~true~ when ~C~ is derived form ~P~
@@ -302,8 +313,17 @@ compile-time (say three or five recursive calls), and insert
 non-recursive calls at compile time for cases when the actual depth
 gets exceeded at run time.
 ** What is the output of the following code:                         :drill:
+SCHEDULED: <2017-11-17 Fri>
 :PROPERTIES:
 :ID:       d41dcc2a-4efb-44dd-894b-05929c683cba
+:DRILL_LAST_INTERVAL: 3.1421
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.456
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:13]
 :END:
 #+BEGIN_SRC c++
 #include <iostream>
@@ -332,17 +352,20 @@ another exception during the exception handling, which will cause
 program to crash. This question is testing if developer has experience
 working with exceptions.
 ** Implement a method                                                :drill:
+SCHEDULED: <2017-11-16 Thu>
 :PROPERTIES:
 :ID:       18e41f5e-2aa2-4edc-a82d-f7e6a6c3f337
-:DRILL_LAST_INTERVAL: 0.0
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 2.0257
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 2
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:57]
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.215
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 21:58]
 :END:
+Implement a methong to get ~topSecretValue~ for any given ~Someting*~
+object.
 #+BEGIN_SRC c++
 class Something {
 public:
@@ -356,8 +379,7 @@ private:
     int topSecretValue;
 };
 #+END_SRC
-Implement a methong to get ~topSecretValue~ for any given ~Someting*~
-object.
+
 
 *** Answer
 Create another class which has all the members of Something in the
@@ -391,16 +413,17 @@ class. (Note: If it turns out that the alignment of the external
 library is mismatched to your code, you can resolve this using ~#pragma
 pack.~)
 ** Implement                                                         :drill:
+SCHEDULED: <2017-11-16 Thu>
 :PROPERTIES:
 :ID:       859bde67-1910-4b53-ab80-be6a7c74a12c
-:DRILL_LAST_INTERVAL: 0.0
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 1.7495
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 2
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:45]
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.215
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:00]
 :END:
 Function ~f~ takes two pointers to two arrays of integers ~A~ and ~B~, and size as
 paratemter.  Then it populates ~B~ where ~B[i]~ is the product of all
@@ -651,16 +674,17 @@ is an ~unsigned char~, it is rerepsented by an 8-bit value which, after
 reaching 255, will overflow (so it will go back to 0) and the loop
 will therefore go on forever.
 ** Call by specific type                                             :drill:
+SCHEDULED: <2017-11-17 Fri>
 :PROPERTIES:
 :ID:       aa9e8053-a2f5-4867-848f-f1a29fd167fd
-:DRILL_LAST_INTERVAL: 0.0
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 2.7116
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 2
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:53]
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.215
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:02]
 :END:
 How can you make sure a C++ function can be called as ~void foo(int,
 int)~ but not as any other type like ~void foo(long, long)~?
@@ -686,8 +710,17 @@ Or without the ~delete~ keyword:
   }
 #+END_SRC
 ** What's the problem with the following code?                       :drill:
+SCHEDULED: <2017-11-17 Fri>
 :PROPERTIES:
 :ID:       04b14574-abfa-4382-90e9-4bbd3a432514
+:DRILL_LAST_INTERVAL: 2.5049
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.456
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:14]
 :END:
 #+BEGIN_SRC c++
   class A {

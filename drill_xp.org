@@ -18,7 +18,7 @@ Care about your craft.
 *** Why
 Why spend you life developing software unless you care about doing it
 well?
-** tipe 2                                                            :drill:
+** Tip 2                                                             :drill:
 SCHEDULED: <2017-11-15 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
@@ -195,18 +195,18 @@ Iterate the schedule with the code.
 Use experience you gain as you implement to refine the project time
 scales.
 ** Tip 12                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       52b38b8e-1710-47ce-9acf-53082767005f
-:DRILL_LAST_INTERVAL: 1.5955
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.438
-:DRILL_EASE: 2.183
+:DRILL_AVERAGE_QUALITY: 2.55
+:DRILL_EASE: 2.043
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-12 Sun 12:33]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:12]
 :END:
 *** Use
 Use the power of command shells.
@@ -268,18 +268,18 @@ Don't assume it - prove it.
 Prove your assumptions in the actual environment - with real data and
 boundary conditions.
 ** Tip 16                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       233f3d96-85fa-429e-a895-c2142e866a4e
-:DRILL_LAST_INTERVAL: 1.4093
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.719
-:DRILL_EASE: 2.324
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 5
+:DRILL_AVERAGE_QUALITY: 2.646
+:DRILL_EASE: 2.184
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:36]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:38]
 :END:
 *** Write
 Write code that writes code.
@@ -395,18 +395,18 @@ Exploit concurrency in your user's workflow
 *** Notes
  - ? Should it be /asynchronity/ now?
 ** Tip 22                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       aec430a6-f071-4683-bf17-cc8106a22005
-:DRILL_LAST_INTERVAL: 1.9355
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 2.625
-:DRILL_EASE: 2.278
+:DRILL_AVERAGE_QUALITY: 2.7
+:DRILL_EASE: 2.138
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-12 Sun 12:35]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:11]
 :END:
 *** Always
 Always design for concurrency.
@@ -714,18 +714,18 @@ Think! about your work
 Turn off the autopilot and take control.  Constantly critique and
 apprise our work.
 ** Tip 39                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       4330446c-3d65-471e-a94d-03814a52d161
-:DRILL_LAST_INTERVAL: 1.3707
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 8
-:DRILL_AVERAGE_QUALITY: 2.438
-:DRILL_EASE: 2.183
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 9
+:DRILL_AVERAGE_QUALITY: 2.458
+:DRILL_EASE: 2.043
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:36]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:14]
 :END:
 *** Don't
 Don't live with broken windows.
@@ -751,18 +751,18 @@ Remember the big picture.
 Don't get so engrossed in the details that you forget to check what's
 happening around you.
 ** Tip 41                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       c207a1e2-a30c-4667-aedc-8abc632dcd6c
-:DRILL_LAST_INTERVAL: 1.4946
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 2.173
-:DRILL_EASE: 2.034
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 7
+:DRILL_AVERAGE_QUALITY: 2.266
+:DRILL_EASE: 1.894
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:32]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:15]
 :END:
 *** Invest
 Invest regularly in your knowledge portfolio.
@@ -790,18 +790,18 @@ It's both what you say and the way you say it.
 There's no point in having great ideas if you don't communicate them
 effectively.
 ** Tip 43                                                            :drill:
-SCHEDULED: <2017-11-13 Mon>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       7ffd5fbb-4910-4700-adde-dbac2dfa9f04
-:DRILL_LAST_INTERVAL: 1.8578
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 2.521
-:DRILL_EASE: 2.226
+:DRILL_AVERAGE_QUALITY: 2.617
+:DRILL_EASE: 2.086
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-11 Sat 14:45]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:09]
 :END:
 *** Make
 Make it easy to reuse.
@@ -897,18 +897,18 @@ Keep knowledge in plain text
 Plain text won't become obsolete.  It helps leverage your work and
 simplifies debugging and testing.
 ** Tip 48                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       1a3ef552-ba88-4ff7-ad75-477dea246ae1
-:DRILL_LAST_INTERVAL: 1.4413
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 7
-:DRILL_AVERAGE_QUALITY: 2.35
-:DRILL_EASE: 2.135
+:DRILL_AVERAGE_QUALITY: 2.443
+:DRILL_EASE: 1.995
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:32]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:11]
 :END:
 *** Use
 Use a single editor well.
@@ -971,18 +971,18 @@ application.
    but not the way you think it is; you just don't understand basics.
    
 ** Tip 51                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       f30d9f21-671f-4aae-a257-7bf0942b75a7
-:DRILL_LAST_INTERVAL: 1.2412
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 13
-:DRILL_AVERAGE_QUALITY: 2.16
-:DRILL_EASE: 2.026
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 14
+:DRILL_AVERAGE_QUALITY: 2.115
+:DRILL_EASE: 1.886
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:33]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:14]
 :END:
 *** Learn
 Learn a text manipulation language.
@@ -1036,18 +1036,18 @@ A dead program normally does a lot less damage than a crippled one.
  - You should crash close to root cause of your problem.
    Otherwise it is extremely hard to find bugs.
 ** Tip 54                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       dacf92a6-8939-4944-a566-20dfd8308597
-:DRILL_LAST_INTERVAL: 2.4558
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.667
-:DRILL_EASE: 2.299
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.6
+:DRILL_EASE: 2.159
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-12 Sun 12:35]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:38]
 :END:
 *** Use
 Use exceptions for exceptional problems
@@ -1243,18 +1243,18 @@ It's the best way to gain insight into how the system will really be used.
 *** Notes
  - and work as support for time to time
 ** Tip 64                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       8ce12868-2620-4dad-8bcb-7720db6add9d
-:DRILL_LAST_INTERVAL: 1.4156
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 7
-:DRILL_AVERAGE_QUALITY: 2.48
-:DRILL_EASE: 2.205
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 8
+:DRILL_AVERAGE_QUALITY: 2.486
+:DRILL_EASE: 2.065
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:34]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:38]
 :END:
 *** Use
 Use a project glossary.
@@ -1384,18 +1384,18 @@ Once a human tester finds a bug, it should be the last time a human
 tester finds that bug.  Automatic tests should check for it from then
 on.
 ** Tip 71                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       4be010ee-a710-46da-acee-237f4d2de451
-:DRILL_LAST_INTERVAL: 2.0134
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.667
-:DRILL_EASE: 2.299
+:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_EASE: 2.159
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-12 Sun 12:33]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:11]
 :END:
 *** Build
 Build documentation in, don't bolt it on.
@@ -1403,18 +1403,18 @@ Build documentation in, don't bolt it on.
 Documentation created separately form code is less likely to be
 correct and up to date.
 ** Tip 71                                                            :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       28dc7d9d-571a-4dea-99d0-ee828502a514
-:DRILL_LAST_INTERVAL: 2.5338
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.521
-:DRILL_EASE: 2.226
+:DRILL_AVERAGE_QUALITY: 2.617
+:DRILL_EASE: 2.086
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-11 Sat 14:50]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:11]
 :END:
 *** Sign
 Sign your work

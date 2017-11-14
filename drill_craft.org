@@ -1,5 +1,7 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-11-14 Tue 21:54]--[2017-11-14 Tue 22:19] =>  0:25
+CLOCK: [2017-11-14 Tue 13:37]--[2017-11-14 Tue 14:02] =>  0:25
 CLOCK: [2017-11-13 Mon 21:22]--[2017-11-13 Mon 21:47] =>  0:25
 CLOCK: [2017-11-12 Sun 12:31]--[2017-11-12 Sun 12:43] =>  0:12
 CLOCK: [2017-11-11 Sat 14:27]--[2017-11-11 Sat 15:01] =>  0:34
@@ -474,17 +476,17 @@ single host.  Non-blocking communication allows recipients to only
 consume resources while active, leading to less system overhead.
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2017-11-14 Tue>
+SCHEDULED: <2017-11-16 Thu>
 :PROPERTIES:
 :ID:       068cab71-1c18-4648-8b3a-0a50dcab719a
-:DRILL_LAST_INTERVAL: 2.0685
+:DRILL_LAST_INTERVAL: 1.7658
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 9
-:DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.757
-:DRILL_EASE: 2.342
+:DRILL_TOTAL_REPEATS: 10
+:DRILL_FAILURE_COUNT: 5
+:DRILL_AVERAGE_QUALITY: 2.713
+:DRILL_EASE: 2.321
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-12 Sun 12:34]
+:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:15]
 :END:
 Describe
 
