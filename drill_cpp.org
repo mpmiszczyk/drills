@@ -1,17 +1,17 @@
 * C++                                                                   :cpp:
 
 ** What will print and why                                           :drill:
-SCHEDULED: <2017-11-16 Thu>
+SCHEDULED: <2017-11-22 Wed>
 :PROPERTIES:
 :ID:       59c3a8dd-9b57-41fa-ace9-e3c273dbdc1f
-:DRILL_LAST_INTERVAL: 2.3586
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 6.1234
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.456
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:12]
+:DRILL_LAST_REVIEWED: [2017-11-16 Thu 23:44]
 :END:
 #+BEGIN_SRC c++
 #include <iostream>
@@ -95,17 +95,17 @@ newly-defined role called ~TA~. But that answer is also imperfect as
 it would hide the fact that a TA is, in fact, both a faculty member
 and a grad student.
 ** Describe the error                                                :drill:
-SCHEDULED: <2017-11-16 Thu>
+SCHEDULED: <2017-11-19 Sun>
 :PROPERTIES:
 :ID:       42f65bd3-08c6-465c-953c-495d1def4925
-:DRILL_LAST_INTERVAL: 2.2122
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 3.4407
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.215
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 2.299
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:00]
+:DRILL_LAST_REVIEWED: [2017-11-16 Thu 23:45]
 :END:
 And explain when will it occure
 #+BEGIN_SRC c++
@@ -223,17 +223,17 @@ incrementing it and then returns the copy.
 That said, many compilers will automatically optimize the first option
 by converting it into the second.
 ** Implement a template function                                     :drill:
-SCHEDULED: <2017-11-16 Thu>
+SCHEDULED: <2017-11-19 Sun>
 :PROPERTIES:
 :ID:       b3d1ce5d-c8fc-426f-b7b9-c52da25a8ae9
-:DRILL_LAST_INTERVAL: 2.3821
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.0
-:DRILL_EASE: 1.926
+:DRILL_LAST_INTERVAL: 3.1372
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.111
+:DRILL_EASE: 1.996
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-14 Tue 21:57]
+:DRILL_LAST_REVIEWED: [2017-11-16 Thu 23:51]
 :END:
 ~IsDerivedFrom()~ should take class ~C~ and class ~P~ as tmplate
 parameters, and should return ~true~ when ~C~ is derived form ~P~
@@ -352,17 +352,17 @@ another exception during the exception handling, which will cause
 program to crash. This question is testing if developer has experience
 working with exceptions.
 ** Implement a method                                                :drill:
-SCHEDULED: <2017-11-16 Thu>
+SCHEDULED: <2017-11-19 Sun>
 :PROPERTIES:
 :ID:       18e41f5e-2aa2-4edc-a82d-f7e6a6c3f337
-:DRILL_LAST_INTERVAL: 2.0257
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 3.0145
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.215
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 2.299
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-14 Tue 21:58]
+:DRILL_LAST_REVIEWED: [2017-11-16 Thu 23:49]
 :END:
 Implement a methong to get ~topSecretValue~ for any given ~Someting*~
 object.
@@ -413,17 +413,17 @@ class. (Note: If it turns out that the alignment of the external
 library is mismatched to your code, you can resolve this using ~#pragma
 pack.~)
 ** Implement                                                         :drill:
-SCHEDULED: <2017-11-16 Thu>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :ID:       859bde67-1910-4b53-ab80-be6a7c74a12c
-:DRILL_LAST_INTERVAL: 1.7495
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 2.2009
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.215
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 2.299
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:00]
+:DRILL_LAST_REVIEWED: [2017-11-16 Thu 23:46]
 :END:
 Function ~f~ takes two pointers to two arrays of integers ~A~ and ~B~, and size as
 paratemter.  Then it populates ~B~ where ~B[i]~ is the product of all

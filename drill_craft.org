@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-11-16 Thu 23:41]--[2017-11-16 Thu 23:53] =>  0:12
 CLOCK: [2017-11-15 Wed 17:49]--[2017-11-15 Wed 17:57] =>  0:08
 CLOCK: [2017-11-14 Tue 21:54]--[2017-11-14 Tue 22:19] =>  0:25
 CLOCK: [2017-11-14 Tue 13:37]--[2017-11-14 Tue 14:02] =>  0:25
@@ -437,18 +438,17 @@ scaling algorithms by providing relevant live performance
 measures.  They achieve elasticity in a cost-effective way on commodity
 hardware and software platforms.
 
-*** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-11-16 Thu>
+*** Reactive Manifesto                                              :drill:leech:
 :PROPERTIES:
 :ID:       cd262b40-dc14-4613-a179-0b8411602103
-:DRILL_LAST_INTERVAL: 2.5861
-:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 0
 :DRILL_TOTAL_REPEATS: 24
-:DRILL_FAILURE_COUNT: 18
-:DRILL_AVERAGE_QUALITY: 2.389
-:DRILL_EASE: 2.157
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-13 Mon 21:24]
+:DRILL_FAILURE_COUNT: 19
+:DRILL_AVERAGE_QUALITY: 2.373
+:DRILL_EASE: 2.148
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2017-11-16 Thu 23:49]
 :END:
 Describe
 
@@ -477,17 +477,17 @@ single host.  Non-blocking communication allows recipients to only
 consume resources while active, leading to less system overhead.
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2017-11-16 Thu>
+SCHEDULED: <2017-11-18 Sat>
 :PROPERTIES:
 :ID:       068cab71-1c18-4648-8b3a-0a50dcab719a
-:DRILL_LAST_INTERVAL: 1.7658
+:DRILL_LAST_INTERVAL: 1.7757
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 10
-:DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 2.713
-:DRILL_EASE: 2.321
+:DRILL_TOTAL_REPEATS: 11
+:DRILL_FAILURE_COUNT: 6
+:DRILL_AVERAGE_QUALITY: 2.68
+:DRILL_EASE: 2.305
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-14 Tue 22:15]
+:DRILL_LAST_REVIEWED: [2017-11-16 Thu 23:53]
 :END:
 Describe
 
