@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-11-19 Sun 15:39]--[2017-11-19 Sun 15:58] =>  0:19
 CLOCK: [2017-11-18 Sat 19:08]--[2017-11-18 Sat 19:32] =>  0:24
 CLOCK: [2017-11-17 Fri 16:04]--[2017-11-17 Fri 16:29] =>  0:25
 CLOCK: [2017-11-16 Thu 23:41]--[2017-11-16 Thu 23:53] =>  0:12
@@ -311,17 +312,17 @@ Reactive systems are
 
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-11-19 Sun>
+SCHEDULED: <2017-11-22 Wed>
 :PROPERTIES:
 :ID:       de26c209-ea03-4fcf-a905-7c936d3939de
-:DRILL_LAST_INTERVAL: 1.2546
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 18
+:DRILL_LAST_INTERVAL: 3.2675
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 19
 :DRILL_FAILURE_COUNT: 12
-:DRILL_AVERAGE_QUALITY: 2.468
-:DRILL_EASE: 2.199
+:DRILL_AVERAGE_QUALITY: 2.496
+:DRILL_EASE: 2.213
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-18 Sat 19:31]
+:DRILL_LAST_REVIEWED: [2017-11-19 Sun 15:54]
 :END:
 Reactive systems are
 
