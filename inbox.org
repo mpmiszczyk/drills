@@ -1,79 +1,82 @@
-* list
-** Agile Manifesto                                                   :craft:
-*** TODO give definition to all
-*** TODO principles [[http://agilemanifesto.org/principles.html][from here]]
-*** TODO Long description from [[https://en.wikipedia.org/wiki/Agile_software_development][wiki]]
-** Craftsmanship Manifesto                                           :craft:
-*** DONE Manifesto
-CLOSED: [2017-09-29 Fri 19:25]
-*** TODO journe from to
-** Reactive                                                          :craft:
-*** TODO Finish glossary
-https://www.reactivemanifesto.org/glossary
-** SOLID                                                             :craft:
-** Scala                                                             :craft:
-** XP                                                                :craft:
-*** TODO Values
-**** Communication
-**** Simplicity
-**** Feedback
-**** Courge
-**** Respect
-*** TODO Principles
-**** Humanity
-**** Economics
-**** Mutual Benefit
-**** Self Similarity
-**** Improvement
-**** Diversity
-**** Reflection
-**** Flow
-**** Opporunity
-**** Redundancy
-**** Filur
-**** Qulity
-**** Baby Steps
-**** Accepted Responsibility
-*** TODO Practices // book have much more ...
-**** Fine Scale Feedback
+* drill
+** INBOX
+*** TODO XP                                                         :craft:
+**** DONE Values
+CLOSED: [2017-11-28 Tue 00:38]
+***** Communication
+***** Simplicity
+***** Feedback
+***** Courge
+***** Respect
+**** TODO Principles
+***** Humanity
+***** Economics
+***** Mutual Benefit
+***** Self Similarity
+***** Improvement
+***** Diversity
+***** Reflection
+***** Flow
+***** Opporunity
+***** Redundancy
+***** Filur
+***** Qulity
+***** Baby Steps
+***** Accepted Responsibility
+**** TODO Practices // book have much more ...
+***** Fine Scale Feedback
 - pair programming
 - planning game
 - TDD
 - whole team
-**** Continous process
+***** Continous process
 - continous integration
 - design improvement
 - small releases
-**** Shared understanding
+***** Shared understanding
 - coding standard
 - collectice code ownership
 - simple design
 - system metaphor
-**** Programmer welfare
+***** Programmer welfare
 - sustainable pace
+*** SOLID                                                           :craft:
+*** gof
+*** Agile Manifesto                                                 :craft:
+**** TODO give definition to all
+**** TODO principles [[http://agilemanifesto.org/principles.html][from here]]
+**** TODO Long description from [[https://en.wikipedia.org/wiki/Agile_software_development][wiki]]
+*** Craftsmanship Manifesto                                         :craft:
+**** DONE Manifesto
+CLOSED: [2017-09-29 Fri 19:25]
+**** TODO journe from to
+*** Reactive                                                        :craft:
+**** TODO Finish glossary
+https://www.reactivemanifesto.org/glossary
+*** Scala                                                           :craft:
 
-** Procrastination
-*** scear the monkey
-**** awake the Decision Maker
-**** worksheet
-**** goals big and small
-**** deadline
-*** gratificatoin
-**** now good vs good later
-**** small achivable goals
-**** track progress
-**** believe in grit
+*** Procrastination
+**** scear the monkey
+***** awake the Decision Maker
+***** worksheet
+***** goals big and small
+***** deadline
+**** gratificatoin
+***** now good vs good later
+***** small achivable goals
+***** track progress
+***** believe in grit
 progress is goal itself
-*** don't scear Decision Maker
-**** what I'm afraid of -> pinpoint it
-*** 6 steps
-**** Assesment
+**** don't scear Decision Maker
+***** what I'm afraid of -> pinpoint it
+**** 6 steps
+***** Assesment
 Why do you procrastinate?
 
 Is there really a reason, or are those just some imaginary doubts.
 What is the root of it, and can/do you have to do anything with it.
 
-**** Visualize the end result
+***** Visualize the end result
 
 Goals should be clear.  And they should be defined.
 
@@ -83,71 +86,74 @@ to move torward some outcome (reward).
 It also help to differenciate betweet what's good now, and what's good
 in the long run.
 
-**** Break down your goal into smaller chunks
+***** Break down your goal into smaller chunks
 
-**** Eat that frog
+***** Eat that frog
 
 And than wait for reward
 
-**** Timer and deep focus
+***** Timer and deep focus
 
 Pomodore to stay most effective.  Single-task with minimal
 distractions, all the rest can wait fifteen minutes.
 
-**** Rewart yourself
+***** Rewart yourself
 
 And do it after.
-** Emacs                                                             :emacs:
-** learning
-** pragmatic programmer                                              :craft:
-** PRINCE2                                                           :craft:
-many people ask about it
-** org-mode                                                          :emacs:
-** magit                                                             :emacs:
+*** Emacs                                                           :emacs:
+*** learning
+*** DONE pragmatic programmer                                       :craft:
+CLOSED: [2017-11-28 Tue 00:38]
+*** org-mode                                                        :emacs:
+*** magit                                                           :emacs:
 even if just to find all functionality
-** ?data+algorithms?
-** gof
-** eat that frog
-*** Decide Your Goals
-**** Long Term
-**** Curren
-**** Which will have greatest impact
-*** Plan your Goals
+*** ?data+algorithms?
+*** eat that frog
+**** Decide Your Goals
+***** Long Term
+***** Curren
+***** Which will have greatest impact
+**** Plan your Goals
 Efficiency is doing the thing right. Effectiveness is doing the right
 thing.
-**** Write list of things 
+***** Write list of things 
  - Next actions
  - Barrers
  - Liiting factors
  - Personal cpabilities
  - Resources
  - Other people
-**** Now invert
+***** Now invert
  - ask why goal isn't already complete
  - start with the end in mind and work bckwrds
-**** Priritise
+***** Priritise
  - **A** - must
  - **B** - should
  - **C** - nice
  - **D** - delegate
  - **E** - eliminate
-**** Set deadlines
+***** Set deadlines
 concreate goals 
-*** Plan your Time
-**** plan in adwance and work from list
-**** priritise your list
-*** Se yourself up for success
-**** Create large chunks of time
+**** Plan your Time
+***** plan in adwance and work from list
+***** priritise your list
+**** Se yourself up for success
+***** Create large chunks of time
 uninterupted work; wake up early
-**** prepare everything you need in advance
+***** prepare everything you need in advance
  - to start faster/easier.
  - remove things not related to taks at hand
-**** eliminate distractions
-*** Work singe-midedly on your mist important task
-**** eat that from
+***** eliminate distractions
+**** Work singe-midedly on your mist important task
+***** eat that from
  - before anything else
  - single-mindedly (no multitasking) util it is complite
-**** dont be afraid to fail
-** grit
-** deep work
-** dired                                                             :emacs:
+***** dont be afraid to fail
+*** grit
+*** deep work
+*** dired                                                           :emacs:
+*** TODO drill Momory model rules on JVM
+  [2017-10-03 Tue]
+  [[file:~/code/scala/mooc_3/parallel_JVM.org::*Memory%20model][Memory model]]
+
+  ? do I need it ?

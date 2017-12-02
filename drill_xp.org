@@ -1445,6 +1445,147 @@ Sign your work
 *** Craftsman
 Craftsman of an earlier age were proud to sign their work.  You should
 be too.
+* eXtreme programming                                             :XP:craft:
+** Values
+*** Name all XP Values                                              :drill:
+SCHEDULED: <2017-12-04 Mon>
+:PROPERTIES:
+:ID:       e7d05206-c9f0-4324-8bd4-741e2d0ff8cc
+:DRILL_LAST_INTERVAL: 2.196
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.456
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:53]
+:END:
+**** all values
+- Simplicity
+- Communication
+- Feedback
+- Courage
+- Respect
+*** Describe XP value:                                              :drill:
+SCHEDULED: <2017-12-04 Mon>
+:PROPERTIES:
+:ID:       afa29c86-57b5-48a3-aef9-303a8e5401c4
+:DRILL_LAST_INTERVAL: 2.3452
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.456
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:53]
+:END:
+**** Communication
+
+Software development is inherently a team sport that relies on
+communication to transfer knowledge from one team member to everyone
+else on the team. XP stresses the importance of the appropriate kind
+of communication - face to face discussion with the aid of a white
+board or other drawing mechanism.
+
+*** Describe XP value:                                              :drill:
+SCHEDULED: <2017-12-04 Mon>
+:PROPERTIES:
+:ID:       52a76a34-0FCC8-4EC6-b247-e4f80e1126f2
+:DRILL_LAST_INTERVAL: 2.0729
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.63
+:DRILL_EASE: 2.281
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:55]
+:END:
+**** Simplicity
+
+
+Simplicity means “what is the simplest thing that will work?” The
+purpose of this is to *avoid waste* and do only absolutely necessary
+things such as keep the design of the system as simple as possible so
+that it is easier to maintain, support, and revise. Simplicity also
+means address only the requirements that you know about; don’t try to
+predict the future.
+**** Short
+- minimal working solution
+- avoid waste
+- avoid over-engineering
+- avoid feature-boom
+*** Describe XP value:                                              :drill:
+SCHEDULED: <2017-12-04 Mon>
+:PROPERTIES:
+:ID:       979e944e-f7b7-477a-8284-9ab729787555
+:DRILL_LAST_INTERVAL: 2.4461
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.456
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:57]
+:END:
+**** Feedback
+
+Through constant feedback about their previous efforts, teams can
+identify areas for improvement and revise their practices.  Feedback
+also supports simple design.  Your team builds something, gathers
+feedback on your design and implementation, and then adjust your
+product going forward.
+
+**** Short
+ - gain knowledge
+ - make sure it is done-done
+
+*** Describe XP value:                                              :drill:
+SCHEDULED: <2017-12-05 Tue>
+:PROPERTIES:
+:ID:       fd26fe2b-5c88-44e3-8195-50933438123
+:DRILL_LAST_INTERVAL: 2.5321
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.456
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:57]
+:END:
+
+**** Courage
+
+Kent Beck defined courage as “effective action in the face of fear”
+(Extreme Programming Explained P. 20). This definition shows a
+preference for action based on other principles so that the results
+aren’t harmful to the team. You need courage to raise organizational
+issues that reduce your team’s effectiveness. You need courage to stop
+doing something that doesn’t work and try something else. You need
+courage to accept and act on feedback, even when it’s difficult to
+accept.
+
+*** Describe XP value:                                              :drill:
+SCHEDULED: <2017-12-04 Mon>
+:PROPERTIES:
+:ID:       b8087fe0-ddd5-43b0-8ef7-ad7e9488a768
+:DRILL_LAST_INTERVAL: 2.1923
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.456
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:58]
+:END:
+**** Respect
+
+The members of your team need to respect each other in order to
+communicate with each other, provide and accept feedback that honors
+your relationship, and to work together to identify simple designs and
+solutions.
+
+
+
 * COMMENT _ local vars
 
 # Local Variables:
@@ -1453,3 +1594,5 @@ be too.
 # org-drill-learn-fraction: 0.12
 # org-drill-add-random-noise-to-intervals-p: t
 # End:
+
+#  LocalWords:  bd
