@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-12-17 Sun 23:57]--[2017-12-18 Mon 00:22] =>  0:25
 CLOCK: [2017-12-11 Mon 22:53]--[2017-12-11 Mon 23:18] =>  0:25
 CLOCK: [2017-12-11 Mon 01:33]--[2017-12-11 Mon 01:47] =>  0:14
 CLOCK: [2017-12-02 Sat 17:06]--[2017-12-02 Sat 17:58] =>  0:52
@@ -119,18 +120,18 @@ contract negotiation
 Not only *customer collaboration* but also *productive partnership*
 
 *** Agile Manifesto                                                 :drill:
-SCHEDULED: <2017-12-11 Mon>
+SCHEDULED: <2018-02-02 Fri>
 :PROPERTIES:
 :ID:       56fa1473-1496-4d48-8fcd-16a2b715d9dc
 :DRILL_CARD_TYPE: twosided
-:DRILL_LAST_INTERVAL: 31.3024
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 45.797
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.802
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2017-11-10 Fri 12:11]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.73
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:14]
 :END:
 
 **** __
@@ -316,17 +317,17 @@ Reactive systems are
 
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-12-12 Tue>
+SCHEDULED: <2017-12-20 Wed>
 :PROPERTIES:
 :ID:       de26c209-ea03-4fcf-a905-7c936d3939de
-:DRILL_LAST_INTERVAL: 1.121
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 21
+:DRILL_LAST_INTERVAL: 2.4529
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 22
 :DRILL_FAILURE_COUNT: 15
-:DRILL_AVERAGE_QUALITY: 2.476
-:DRILL_EASE: 2.203
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.215
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-11 Mon 23:19]
+:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:17]
 :END:
 Reactive systems are
 
@@ -372,17 +373,17 @@ consistent behaviour in turn simplifies error handling, builds end
 user confidence, and encourages further interaction.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-12-12 Tue>
+SCHEDULED: <2017-12-19 Tue>
 :PROPERTIES:
 :ID:       a261e838-15df-4648-b788-16fa0bc007cd
-:DRILL_LAST_INTERVAL: 1.2284
+:DRILL_LAST_INTERVAL: 1.0136
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 23
-:DRILL_FAILURE_COUNT: 12
-:DRILL_AVERAGE_QUALITY: 2.527
-:DRILL_EASE: 2.229
+:DRILL_TOTAL_REPEATS: 24
+:DRILL_FAILURE_COUNT: 13
+:DRILL_AVERAGE_QUALITY: 2.485
+:DRILL_EASE: 2.208
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-11 Mon 23:05]
+:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:23]
 :END:
 Describe
 
@@ -410,18 +411,18 @@ component and high-availability is ensured by replication where
 necessary.  The client of a component is not burdened with handling
 its failures.
 
-*** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-12-12 Tue>
+a*** Reactive Manifesto                                              :drill:
+SCHEDULED: <2017-12-20 Wed>
 :PROPERTIES:
 :ID:       21e2503a-b163-468f-a4c0-630befdf4376
-:DRILL_LAST_INTERVAL: 1.0274
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 14
+:DRILL_LAST_INTERVAL: 2.2365
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 15
 :DRILL_FAILURE_COUNT: 12
-:DRILL_AVERAGE_QUALITY: 2.368
-:DRILL_EASE: 2.145
+:DRILL_AVERAGE_QUALITY: 2.41
+:DRILL_EASE: 2.168
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-11 Mon 23:20]
+:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:17]
 :END:
 Describe
 
@@ -716,17 +717,17 @@ responds to the overall component health state.
 ** eXtreme Programming
 
 *** XP Values                                                       :drill:
-SCHEDULED: <2017-12-07 Thu>
+SCHEDULED: <2018-01-16 Tue>
 :PROPERTIES:
 :ID:       b82e1b84-c553-41fa-9e73-14edfd222b70
-:DRILL_LAST_INTERVAL: 27.7516
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 28.7724
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 7
-:DRILL_AVERAGE_QUALITY: 2.583
-:DRILL_EASE: 2.257
+:DRILL_AVERAGE_QUALITY: 2.615
+:DRILL_EASE: 2.273
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-09 Thu 22:01]
+:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:08]
 :END:
 List all
 
