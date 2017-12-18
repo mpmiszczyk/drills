@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-12-18 Mon 20:40]--[2017-12-18 Mon 20:58] =>  0:18
 CLOCK: [2017-12-17 Sun 23:57]--[2017-12-18 Mon 00:22] =>  0:25
 CLOCK: [2017-12-11 Mon 22:53]--[2017-12-11 Mon 23:18] =>  0:25
 CLOCK: [2017-12-11 Mon 01:33]--[2017-12-11 Mon 01:47] =>  0:14
@@ -74,18 +75,18 @@ Not only *individuals and interactions* but also *community of
 professionals*
 
 *** Agile Manifesto                                                 :drill:
-SCHEDULED: <2017-12-14 Thu>
+SCHEDULED: <2018-01-17 Wed>
 :PROPERTIES:
 :ID:       a5591094-bfe7-49e4-9e42-20570eaac95d
 :DRILL_CARD_TYPE: twosided
-:DRILL_LAST_INTERVAL: 34.1316
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 30.3119
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 3.204
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2017-11-10 Fri 12:11]
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.977
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2017-12-18 Mon 20:53]
 :END:
 **** __
 *Working software*
@@ -485,17 +486,17 @@ single host.  Non-blocking communication allows recipients to only
 consume resources while active, leading to less system overhead.
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2017-12-13 Wed>
+SCHEDULED: <2017-12-22 Fri>
 :PROPERTIES:
 :ID:       068cab71-1c18-4648-8b3a-0a50dcab719a
-:DRILL_LAST_INTERVAL: 1.6924
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 14
+:DRILL_LAST_INTERVAL: 3.8237
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 15
 :DRILL_FAILURE_COUNT: 8
-:DRILL_AVERAGE_QUALITY: 2.531
-:DRILL_EASE: 2.231
+:DRILL_AVERAGE_QUALITY: 2.562
+:DRILL_EASE: 2.247
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-11 Mon 23:01]
+:DRILL_LAST_REVIEWED: [2017-12-18 Mon 20:42]
 :END:
 Describe
 
@@ -666,17 +667,17 @@ corrupted internal state.
 
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2017-12-13 Wed>
+SCHEDULED: <2017-12-23 Sat>
 :PROPERTIES:
 :ID:       29b29221-63e1-4d97-aea4-dc0bb8a30916
-:DRILL_LAST_INTERVAL: 2.1287
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 4.7627
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.633
-:DRILL_EASE: 2.282
+:DRILL_AVERAGE_QUALITY: 2.679
+:DRILL_EASE: 2.304
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-11 Mon 23:07]
+:DRILL_LAST_REVIEWED: [2017-12-18 Mon 20:44]
 :END:
 Describe
 
