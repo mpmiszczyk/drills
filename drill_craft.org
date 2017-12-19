@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-12-19 Tue 22:03]--[2017-12-19 Tue 22:14] =>  0:11
 CLOCK: [2017-12-18 Mon 20:40]--[2017-12-18 Mon 20:58] =>  0:18
 CLOCK: [2017-12-17 Sun 23:57]--[2017-12-18 Mon 00:22] =>  0:25
 CLOCK: [2017-12-11 Mon 22:53]--[2017-12-11 Mon 23:18] =>  0:25
@@ -374,17 +375,17 @@ consistent behaviour in turn simplifies error handling, builds end
 user confidence, and encourages further interaction.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-20 Wed>
 :PROPERTIES:
 :ID:       a261e838-15df-4648-b788-16fa0bc007cd
-:DRILL_LAST_INTERVAL: 1.0136
+:DRILL_LAST_INTERVAL: 0.9079
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 24
-:DRILL_FAILURE_COUNT: 13
-:DRILL_AVERAGE_QUALITY: 2.485
-:DRILL_EASE: 2.208
+:DRILL_TOTAL_REPEATS: 25
+:DRILL_FAILURE_COUNT: 15
+:DRILL_AVERAGE_QUALITY: 2.469
+:DRILL_EASE: 2.199
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:23]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:13]
 :END:
 Describe
 
@@ -412,7 +413,7 @@ component and high-availability is ensured by replication where
 necessary.  The client of a component is not burdened with handling
 its failures.
 
-a*** Reactive Manifesto                                              :drill:
+*** Reactive Manifesto                                              :drill:
 SCHEDULED: <2017-12-20 Wed>
 :PROPERTIES:
 :ID:       21e2503a-b163-468f-a4c0-630befdf4376

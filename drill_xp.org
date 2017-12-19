@@ -1,17 +1,17 @@
 * pragmatic programmer                                      :pragmatic:craft:
 ** Tip 1                                                             :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-20 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       2d914807-1ed4-4f5f-9577-67ab2a67432c
-:DRILL_LAST_INTERVAL: 1.1119
+:DRILL_LAST_INTERVAL: 1.2047
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 10
-:DRILL_FAILURE_COUNT: 12
-:DRILL_AVERAGE_QUALITY: 2.346
-:DRILL_EASE: 2.133
+:DRILL_TOTAL_REPEATS: 11
+:DRILL_FAILURE_COUNT: 13
+:DRILL_AVERAGE_QUALITY: 2.295
+:DRILL_EASE: 2.104
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:20]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:13]
 :END:
 *** Care
 Care about your craft.
@@ -38,18 +38,18 @@ Provide options, don't make lame excuses.
 Instead of excuses, provide options.  Don't say it can't be done;
 explain what can be done.
 ** Tip 3                                                             :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-22 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       09ae32e6-1cb0-4d71-8bc4-154797c72ee9
-:DRILL_LAST_INTERVAL: 1.2969
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 3.1001
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 9
-:DRILL_AVERAGE_QUALITY: 2.622
-:DRILL_EASE: 2.277
+:DRILL_AVERAGE_QUALITY: 2.656
+:DRILL_EASE: 2.294
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:23]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:11]
 :END:
 *** Be
 Be a catalyst for change.
@@ -103,18 +103,18 @@ in terms of you and your project.
    But I believe that I'm able to see problems related to it, that I
    don't just buy in into the fashion.  
 ** Tip 6                                                             :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-20 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       f6035d43-8b46-4ebc-a0db-ee7d7b0acba1
-:DRILL_LAST_INTERVAL: 1.2246
+:DRILL_LAST_INTERVAL: 1.2118
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 13
-:DRILL_FAILURE_COUNT: 14
+:DRILL_TOTAL_REPEATS: 14
+:DRILL_FAILURE_COUNT: 15
 :DRILL_AVERAGE_QUALITY: 2.514
 :DRILL_EASE: 2.223
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:21]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:13]
 :END:
 *** DRY
 Don't repeat yourself
@@ -463,18 +463,18 @@ maintaining independence and isolation among participants.
  - Kanban board
  - But also Wiki
 ** Tip 24                                                            :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-29 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       bf9790b6-310d-4a94-894b-778f4548603f
-:DRILL_LAST_INTERVAL: 7.572
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 9.5186
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.456
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-11 Mon 23:07]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:12]
 :END:
 *** Estimate
 Estimate the order of your algorithms
@@ -563,18 +563,18 @@ Invest in the abstraction, not the implementation.  Abstractions can
 survive the barrage of changes from different implementations and new
 technologies.
 ** Tip 29                                                            :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-22 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       ba4e7ac1-6c56-4c8f-92d7-3941c06218f2
-:DRILL_LAST_INTERVAL: 1.3221
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 3.1327
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 11
-:DRILL_AVERAGE_QUALITY: 2.421
-:DRILL_EASE: 2.174
+:DRILL_AVERAGE_QUALITY: 2.474
+:DRILL_EASE: 2.202
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:21]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:12]
 :END:
 *** Don't
 Don't think outside the box - find the box.
@@ -783,18 +783,18 @@ Remember the big picture.
 Don't get so engrossed in the details that you forget to check what's
 happening around you.
 ** Tip 41                                                            :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-20 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       c207a1e2-a30c-4667-aedc-8abc632dcd6c
-:DRILL_LAST_INTERVAL: 1.1434
+:DRILL_LAST_INTERVAL: 1.3328
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 12
-:DRILL_FAILURE_COUNT: 11
-:DRILL_AVERAGE_QUALITY: 2.38
-:DRILL_EASE: 2.152
+:DRILL_TOTAL_REPEATS: 13
+:DRILL_FAILURE_COUNT: 12
+:DRILL_AVERAGE_QUALITY: 2.33
+:DRILL_EASE: 2.124
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 20:53]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:13]
 :END:
 *** Invest
 Invest regularly in your knowledge portfolio.
@@ -977,18 +977,18 @@ it is still your problem, and it still needs to be fixed.
  - It is impossible to find the cause bofore you fix the problem.
    All you can do beforehand is guess, that's not professional.
 ** Tip 50                                                            :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-30 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       ebe27976-dd5c-4d48-aba4-c2f5ba485fcf
-:DRILL_LAST_INTERVAL: 7.5847
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 10.5852
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.782
-:DRILL_EASE: 2.353
+:DRILL_AVERAGE_QUALITY: 2.813
+:DRILL_EASE: 2.368
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-11 Mon 01:38]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:11]
 :END:
 *** ~select~
 ~select~ isn't broken.
@@ -1254,18 +1254,18 @@ it before you incorporate it into your project.
  - release tools are kind of wizards
  - ~IDE code compile/run~ are kind of wizards
 ** Tip 63                                                            :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-22 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       3faf0952-aa4f-4e5a-a230-80b16931700d
-:DRILL_LAST_INTERVAL: 1.4693
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 3.3005
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 9
-:DRILL_AVERAGE_QUALITY: 2.576
-:DRILL_EASE: 2.254
+:DRILL_AVERAGE_QUALITY: 2.615
+:DRILL_EASE: 2.273
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 20:55]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:11]
 :END:
 *** Work
 Work with user to think like a user.
@@ -1377,18 +1377,18 @@ Test early.  Test often.  Test automatically.
 Test that run with every build are much more effective than test plans
 that sit on a shelf.
 ** Tip 69                                                            :drill:
-SCHEDULED: <2017-12-19 Tue>
+SCHEDULED: <2017-12-22 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       1144cf4c-761a-4b40-bc78-33b671b81c6c
-:DRILL_LAST_INTERVAL: 1.2345
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 2.8539
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 14
-:DRILL_AVERAGE_QUALITY: 2.533
-:DRILL_EASE: 2.233
+:DRILL_AVERAGE_QUALITY: 2.569
+:DRILL_EASE: 2.25
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 00:21]
+:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:04]
 :END:
 *** Use
 Use saboteurs to test yourg testing.
