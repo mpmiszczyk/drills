@@ -1,0 +1,71 @@
+* inbox
+** beck about 5 min talk and then data
+** hightlights from XP
+* quoutes
+** Tradition                                                         :drill:
+:PROPERTIES:
+:ID:       e3654a0e-a8bd-4734-a446-682ef5f973c7
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [2017-12-30 Sat 18:14]
+:END:
+*** Gustav Mahler
+#+BEGIN_QUOTE
+Tradition is not the worship of ashes but the preservation of fire.
+#+END_QUOTE
+** Making Cars                                                       :drill:
+:PROPERTIES:
+:ID:       21beab22-c85e-4fa4-813f-b66eaed5f8cf
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [2017-12-30 Sat 18:14]
+:END:
+*** Fujio Cho; Toyota Way
+#+BEGIN_QUOTE
+First we build people, then we build cars.
+#+END_QUOTE
+*** Notes
+Dan North sad it in slightly better way:
+#+BEGIN_QUOTE
+We build people, and they build cars.
+#+END_QUOTE
+** Light Sabre                                                       :drill:
+:PROPERTIES:
+:ID:       7885c06f-8bf6-4c02-b66c-0aeb14c2d6de
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [2017-12-30 Sat 18:14]
+:END:
+*** Dan North
+#+BEGIN_QUOTE
+Build your own Light Sabre
+#+END_QUOTE
+
+*** Notes
+As MasterCraftsman you are expected to be able to build your own
+tools, not just use what's given.  All woodworking shops have
+metalworking stations just for this porpouse.  End even in todays
+power-machine down all good craftsman's can and are building they own
+rigs and templates.  It's nothing now (or Sci-Fi)
+
+** Dunning Kruger Effect
+...
+
+*** When
+Least competent people think they are most competent because they lack
+the very expertise neeed to recognie how badly they're doing.
