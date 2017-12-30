@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2017-12-30 Sat 17:50]--[2017-12-30 Sat 18:15] =>  0:25
 CLOCK: [2017-12-29 Fri 23:53]--[2017-12-30 Sat 00:18] =>  0:25
 CLOCK: [2017-12-19 Tue 22:03]--[2017-12-19 Tue 22:14] =>  0:11
 CLOCK: [2017-12-18 Mon 20:40]--[2017-12-18 Mon 20:58] =>  0:18
@@ -488,17 +489,17 @@ single host.  Non-blocking communication allows recipients to only
 consume resources while active, leading to less system overhead.
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2017-12-22 Fri>
+SCHEDULED: <2018-01-04 Thu>
 :PROPERTIES:
 :ID:       068cab71-1c18-4648-8b3a-0a50dcab719a
-:DRILL_LAST_INTERVAL: 3.8237
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 15
+:DRILL_LAST_INTERVAL: 5.1239
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 16
 :DRILL_FAILURE_COUNT: 8
-:DRILL_AVERAGE_QUALITY: 2.562
-:DRILL_EASE: 2.247
+:DRILL_AVERAGE_QUALITY: 2.589
+:DRILL_EASE: 2.261
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 20:42]
+:DRILL_LAST_REVIEWED: [2017-12-30 Sat 18:09]
 :END:
 Describe
 
@@ -521,6 +522,9 @@ that occurs within the service.  This is the antonym of synchronous
 processing which implies that the client only resumes its own
 execution once the service has processed the request.
 
+**** Notes
+- aync is not observable, while all streams are
+  How those two are to each other?
 *** Reactive glossary                                               :drill:
 SCHEDULED: <2018-01-04 Thu>
 :PROPERTIES:
