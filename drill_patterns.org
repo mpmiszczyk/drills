@@ -1,0 +1,231 @@
+* Design Patterns
+Based on https://sourcemaking.com/design_patterns
+
+** Gang Of Four
+*** Design Pattern                                                  :drill:
+:PROPERTIES:
+:ID:       964ea352-772c-4967-ba0e-58ab8eb5c692
+:END:
+**** *Chain of Responsibility*
+Avoid coupling the _sender_ of a request to its _receiver_ by giving more
+than one object a chance to handle the request. Chain the receiving
+objects and pass the request along the chain until an object handles
+it.
+
+Launch-and-leave requests with a single processing pipeline that
+contains many possible handlers.
+
+An object-oriented linked list with recursive traversal.
+
+**** Check list
+ - The base class maintains a "next" pointer.
+ - Each derived class implements its contribution for handling the
+   request.
+ - If the request needs to be "passed on", then the derived class
+   "calls back" to the base class, which delegates to the "next"
+   pointer.
+ - The client (or some third party) creates and links the chain (which
+   may include a link from the last node to the root node).
+ - The client "launches and leaves" each request with the root of the
+   chain.
+ - Recursive delegation produces the illusion of magic.
+
+**** Problem
+There is a potentially variable number of "handler" or "processing
+element" or "node" objects, and a stream of requests that must be
+handled. Need to efficiently process the requests without hard-wiring
+handler relationships and precedence, or request-to-handler mappings.
+
+**** Code
+#+BEGIN_SRC python
+  """
+  Avoid coupling the sender of a request to its receiver by giving
+  more than one object a chance to handle the request. Chain the receiving
+  objects and pass the request along the chain until an object handles it.
+  """
+
+  import abc
+
+
+  class Handler(metaclass=abc.ABCMeta):
+      """
+      Define an interface for handling requests.
+      Implement the successor link.
+      """
+
+      def __init__(self, successor=None):
+          self._successor = successor
+
+      @abc.abstractmethod
+      def handle_request(self):
+          pass
+
+
+  class ConcreteHandler1(Handler):
+      """
+      Handle request, otherwise forward it to the successor.
+      """
+
+      def handle_request(self):
+          if True:  # if can_handle:
+              pass
+          elif self._successor is not None:
+              self._successor.handle_request()
+
+
+  class ConcreteHandler2(Handler):
+      """
+      Handle request, otherwise forward it to the successor.
+      """
+
+      def handle_request(self):
+          if False:  # if can_handle:
+              pass
+          elif self._successor is not None:
+              self._successor.handle_request()
+
+
+  def main():
+      concrete_handler_1 = ConcreteHandler1()
+      concrete_handler_2 = ConcreteHandler2(concrete_handler_1)
+      concrete_handler_2.handle_request()
+
+
+  if __name__ == "__main__":
+      main()
+#+END_SRC
+**** Norvig
+**** Similar
+- Command (can be used with)
+- Mediator (decoupling sender and receiver)
+- Composit (Chain ackt like requests - it's parts)
+- Observer 
+**** Notes
+Somewaht similar to fold on method?
+Or to event?
+
+*** Design Pattern                                                  :drill:
+**** *Decorator*
+ - Attach additional responsibilities to an object
+   dynamically. Decorators provide a flexible alternative to
+   subclassing for extending functionality.
+ - Client-specified embellishment of a core object by recursively
+   wrapping it.
+ - Wrapping a gift, putting it in a box, and wrapping the box.
+
+**** Check List
+ - Ensure the context is: a single core (or non-optional) component,
+   several optional embellishments or wrappers, and an interface that
+   is common to all.
+ - Create a "Lowest Common Denominator" interface that makes all
+   classes interchangeable.
+ - Create a second level base class (Decorator) to support the
+   optional wrapper classes.
+ - The Core class and Decorator class inherit from the LCD interface.
+ - The Decorator class declares a composition relationship to the LCD
+   interface, and this data member is initialized in its constructor.
+ - The Decorator class delegates to the LCD object.
+ - Define a Decorator derived class for each optional embellishment.
+ - Decorator derived classes implement their wrapper functionality -
+   and - delegate to the Decorator base class.
+ - The client configures the type and ordering of Core and Decorator
+   objects.
+**** Problem
+You want to add behavior or state to individual objects at
+run-time. Inheritance is not feasible because it is static and applies
+to an entire class.
+**** Code
+#+BEGIN_SRC python
+
+  """
+  Attach additional responsibilities to an object dynamically. Decorators
+  provide a flexible alternative to subclassing for extending
+  functionality.
+  """
+
+  import abc
+
+
+  class Component(metaclass=abc.ABCMeta):
+      """
+      Define the interface for objects that can have responsibilities
+      added to them dynamically.
+      """
+
+      @abc.abstractmethod
+      def operation(self):
+          pass
+
+
+  class Decorator(Component, metaclass=abc.ABCMeta):
+      """
+      Maintain a reference to a Component object and define an interface
+      that conforms to Component's interface.
+      """
+
+      def __init__(self, component):
+          self._component = component
+
+      @abc.abstractmethod
+      def operation(self):
+          pass
+
+
+  class ConcreteDecoratorA(Decorator):
+      """
+      Add responsibilities to the component.
+      """
+
+      def operation(self):
+          # ...
+          self._component.operation()
+          # ...
+
+
+  class ConcreteDecoratorB(Decorator):
+      """
+      Add responsibilities to the component.
+      """
+
+      def operation(self):
+          # ...
+          self._component.operation()
+          # ...
+
+
+  class ConcreteComponent(Component):
+      """
+      Define an object to which additional responsibilities can be
+      attached.
+      """
+
+      def operation(self):
+          pass
+
+
+  def main():
+      concrete_component = ConcreteComponent()
+      concrete_decorator_a = ConcreteDecoratorA(concrete_component)
+      concrete_decorator_b = ConcreteDecoratorB(concrete_decorator_a)
+      concrete_decorator_b.operation()
+
+
+  if __name__ == "__main__":
+      main()
+#+END_SRC
+**** Norvig
+**** Similar
+ - Proxy
+ - Composite
+ - Strategy
+ - Chain of resposibility
+**** Notes
+* COMMENT _ local vars
+
+# Local Variables:
+# org-drill-maximum-items-per-session:    30
+# org-drill-spaced-repetition-algorithm:  simple8
+# org-drill-learn-fraction: 0.23
+# org-drill-add-random-noise-to-intervals-p: t
+# End:
+
