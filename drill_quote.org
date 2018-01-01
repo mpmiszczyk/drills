@@ -63,9 +63,29 @@ metalworking stations just for this porpouse.  End even in todays
 power-machine down all good craftsman's can and are building they own
 rigs and templates.  It's nothing now (or Sci-Fi)
 
-** Dunning Kruger Effect
+** Dunning Kruger Effect                                             :drill:
+SCHEDULED: <2018-01-05 Fri>
+:PROPERTIES:
+:ID:       47843b20-b74f-43b5-a420-3e8630165555
+:DRILL_LAST_INTERVAL: 3.891
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2018-01-01 Mon 16:55]
+:END:
 ...
 
 *** When
 Least competent people think they are most competent because they lack
 the very expertise neeed to recognie how badly they're doing.
+
+*** Notes
+It could be simplified
+** Well
+*** Red Beard
+Even bad food taste good if you chew it well.
+*** Notes
+If you apply yourself you will get satisfaction even from bad work.

@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2018-01-01 Mon 16:50]--[2018-01-01 Mon 17:15] =>  0:25
 CLOCK: [2017-12-30 Sat 17:50]--[2017-12-30 Sat 18:15] =>  0:25
 CLOCK: [2017-12-29 Fri 23:53]--[2017-12-30 Sat 00:18] =>  0:25
 CLOCK: [2017-12-19 Tue 22:03]--[2017-12-19 Tue 22:14] =>  0:11
@@ -343,17 +344,17 @@ Reactive systems are
  - fault-tolerant
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2018-01-01 Mon>
+SCHEDULED: <2018-01-07 Sun>
 :PROPERTIES:
 :ID:       50d0c2db-4ef0-41d3-9e04-6bc687bb8278
-:DRILL_LAST_INTERVAL: 2.1066
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 5.5443
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.641
-:DRILL_EASE: 2.286
+:DRILL_AVERAGE_QUALITY: 2.674
+:DRILL_EASE: 2.302
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 20:38]
+:DRILL_LAST_REVIEWED: [2018-01-01 Mon 16:53]
 :END:
 Describe
 
@@ -376,18 +377,17 @@ bounds so they deliver a consistent quality of service.  This
 consistent behaviour in turn simplifies error handling, builds end
 user confidence, and encourages further interaction.
 
-*** Reactive Manifesto                                              :drill:
-SCHEDULED: <2018-01-01 Mon>
+*** Reactive Manifesto                                              :drill:leech:
 :PROPERTIES:
 :ID:       a261e838-15df-4648-b788-16fa0bc007cd
-:DRILL_LAST_INTERVAL: 2.1722
-:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 0
 :DRILL_TOTAL_REPEATS: 26
-:DRILL_FAILURE_COUNT: 15
-:DRILL_AVERAGE_QUALITY: 2.489
-:DRILL_EASE: 2.21
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 01:45]
+:DRILL_FAILURE_COUNT: 16
+:DRILL_AVERAGE_QUALITY: 2.471
+:DRILL_EASE: 2.2
+:DRILL_LAST_QUALITY: 2
+:DRILL_LAST_REVIEWED: [2018-01-01 Mon 16:54]
 :END:
 Describe
 
@@ -416,17 +416,17 @@ necessary.  The client of a component is not burdened with handling
 its failures.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2017-12-31 Sun>
+SCHEDULED: <2018-01-04 Thu>
 :PROPERTIES:
 :ID:       21e2503a-b163-468f-a4c0-630befdf4376
-:DRILL_LAST_INTERVAL: 1.1908
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 16
+:DRILL_LAST_INTERVAL: 2.8485
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 17
 :DRILL_FAILURE_COUNT: 14
-:DRILL_AVERAGE_QUALITY: 2.346
-:DRILL_EASE: 2.133
+:DRILL_AVERAGE_QUALITY: 2.384
+:DRILL_EASE: 2.154
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 02:03]
+:DRILL_LAST_REVIEWED: [2018-01-01 Mon 16:52]
 :END:
 Describe
 
