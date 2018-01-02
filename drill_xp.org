@@ -1,17 +1,17 @@
 * pragmatic programmer                                      :pragmatic:craft:
 ** Tip 1                                                             :drill:
-SCHEDULED: <2018-01-02 Tue>
+SCHEDULED: <2018-01-05 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       2d914807-1ed4-4f5f-9577-67ab2a67432c
-:DRILL_LAST_INTERVAL: 2.5259
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 3.2303
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 13
-:DRILL_AVERAGE_QUALITY: 2.354
-:DRILL_EASE: 2.138
+:DRILL_AVERAGE_QUALITY: 2.404
+:DRILL_EASE: 2.165
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 01:45]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:22]
 :END:
 *** Care
 Care about your craft.
@@ -57,18 +57,18 @@ Be a catalyst for change.
 You can't force change on people.  Instead, show them how the future
 might be and help them participate in creating it.
 ** Tip 4                                                             :drill:
-SCHEDULED: <2018-01-02 Tue>
+SCHEDULED: <2018-01-04 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       5c2ff0c6-8b27-4341-944a-792d5fceb34b
-:DRILL_LAST_INTERVAL: 2.8276
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
-:DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.751
-:DRILL_EASE: 2.339
+:DRILL_LAST_INTERVAL: 1.7955
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 9
+:DRILL_FAILURE_COUNT: 5
+:DRILL_AVERAGE_QUALITY: 2.705
+:DRILL_EASE: 2.317
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 01:43]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:22]
 :END:
 *** Make
 Make quality a requirements issue.
@@ -103,18 +103,18 @@ in terms of you and your project.
    But I believe that I'm able to see problems related to it, that I
    don't just buy in into the fashion.  
 ** Tip 6                                                             :drill:
-SCHEDULED: <2018-01-02 Tue>
+SCHEDULED: <2018-01-05 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       f6035d43-8b46-4ebc-a0db-ee7d7b0acba1
-:DRILL_LAST_INTERVAL: 2.5927
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 15
+:DRILL_LAST_INTERVAL: 3.1492
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 16
 :DRILL_FAILURE_COUNT: 15
-:DRILL_AVERAGE_QUALITY: 2.546
-:DRILL_EASE: 2.239
+:DRILL_AVERAGE_QUALITY: 2.574
+:DRILL_EASE: 2.253
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 02:02]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:21]
 :END:
 *** DRY
 Don't repeat yourself
@@ -294,18 +294,18 @@ Don't assume it - prove it.
 Prove your assumptions in the actual environment - with real data and
 boundary conditions.
 ** Tip 16                                                            :drill:
-SCHEDULED: <2018-01-02 Tue>
+SCHEDULED: <2018-01-03 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       233f3d96-85fa-429e-a895-c2142e866a4e
-:DRILL_LAST_INTERVAL: 1.3282
+:DRILL_LAST_INTERVAL: 1.2419
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 12
-:DRILL_FAILURE_COUNT: 12
-:DRILL_AVERAGE_QUALITY: 2.42
-:DRILL_EASE: 2.173
+:DRILL_TOTAL_REPEATS: 13
+:DRILL_FAILURE_COUNT: 13
+:DRILL_AVERAGE_QUALITY: 2.364
+:DRILL_EASE: 2.143
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2018-01-01 Mon 16:55]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:23]
 :END:
 *** Write
 Write code that writes code.
@@ -795,18 +795,18 @@ happening around you.
  - Optimize whole process, end to end (from Lean)
  - Don't forget to look up from your keyboard from time to time (people)
 ** Tip 41                                                            :drill:
-SCHEDULED: <2018-01-02 Tue>
+SCHEDULED: <2018-01-06 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       c207a1e2-a30c-4667-aedc-8abc632dcd6c
-:DRILL_LAST_INTERVAL: 2.5
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 14
+:DRILL_LAST_INTERVAL: 3.6236
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 15
 :DRILL_FAILURE_COUNT: 12
-:DRILL_AVERAGE_QUALITY: 2.378
-:DRILL_EASE: 2.151
+:DRILL_AVERAGE_QUALITY: 2.419
+:DRILL_EASE: 2.173
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 01:52]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:21]
 :END:
 *** Invest
 Invest regularly in your knowledge portfolio.
@@ -903,18 +903,18 @@ you produce, but in the lessons you learn.
    experience and insight you will get from it.  Try and practice.
    Often and again and again.  Up to the *kata*.
 ** Tip 46                                                            :drill:
-SCHEDULED: <2018-01-02 Tue>
+SCHEDULED: <2018-01-19 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       2cf09bfa-d158-4c47-8820-df2815aeeac3
-:DRILL_LAST_INTERVAL: 14.5513
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 17.1011
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.917
-:DRILL_EASE: 2.416
+:DRILL_AVERAGE_QUALITY: 2.929
+:DRILL_EASE: 2.422
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-18 Mon 20:45]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:22]
 :END:
 *** Estimate
 Estimate to avoid surprises.
@@ -1178,23 +1178,23 @@ Separate views from models.
 Gain flexibility at low cost by designing your application in terms of
 models and views.
 ** Tip 59                                                            :drill:
-SCHEDULED: <2018-01-02 Tue>
+SCHEDULED: <2018-01-03 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       ac8c5e77-1ffb-4951-8fb5-4c71287b451e
-:DRILL_LAST_INTERVAL: 2.9622
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 11
-:DRILL_FAILURE_COUNT: 8
-:DRILL_AVERAGE_QUALITY: 2.554
-:DRILL_EASE: 2.243
+:DRILL_LAST_INTERVAL: 1.4687
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 12
+:DRILL_FAILURE_COUNT: 9
+:DRILL_AVERAGE_QUALITY: 2.549
+:DRILL_EASE: 2.24
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 01:45]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:23]
 :END:
 *** Don't
 Don't program by coincidence.
 *** Rely
-Rely only on reliable things.  Beware of accidental complexity, and
+Rely only on reliable things.  Beware of *accidental complexity*, and
 don't confuse a happy coincidence with a purposeful plan.
 ** Tip 60                                                            :drill:
 SCHEDULED: <2018-01-05 Fri>
@@ -1223,18 +1223,18 @@ timing your code in real target environment.
    in production.
 
 ** Tip 61                                                            :drill:
-SCHEDULED: <2018-01-02 Tue>
+SCHEDULED: <2018-01-03 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: twosided
 :ID:       55110c26-aa39-4f34-82af-1bdf9c342606
-:DRILL_LAST_INTERVAL: 2.7969
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 9
-:DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 2.694
-:DRILL_EASE: 2.312
+:DRILL_LAST_INTERVAL: 1.4037
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 10
+:DRILL_FAILURE_COUNT: 7
+:DRILL_AVERAGE_QUALITY: 2.662
+:DRILL_EASE: 2.296
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 17:51]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:22]
 :END:
 *** Design
 Design to test.
@@ -1482,17 +1482,17 @@ be too.
 * eXtreme programming                                             :XP:craft:
 ** Values
 *** Name all XP Values                                              :drill:
-SCHEDULED: <2017-12-25 Mon>
+SCHEDULED: <2018-01-09 Tue>
 :PROPERTIES:
 :ID:       e7d05206-c9f0-4324-8bd4-741e2d0ff8cc
-:DRILL_LAST_INTERVAL: 5.7843
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 7.0102
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.456
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-19 Tue 22:30]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:36]
 :END:
 **** all values
 - Simplicity
@@ -1500,18 +1500,18 @@ SCHEDULED: <2017-12-25 Mon>
 - Feedback
 - Courage
 - Respect
-*** Describe XP value:                                              :drill:
-SCHEDULED: <2017-12-04 Mon>
+*** Describe Xp value:                                              :drill:
+SCHEDULED: <2018-01-08 Mon>
 :PROPERTIES:
 :ID:       afa29c86-57b5-48a3-aef9-303a8e5401c4
-:DRILL_LAST_INTERVAL: 2.3452
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.5658
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.456
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:53]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:29]
 :END:
 **** Communication
 
@@ -1521,21 +1521,25 @@ else on the team. XP stresses the importance of the appropriate kind
 of communication - face to face discussion with the aid of a white
 board or other drawing mechanism.
 
+**** Short
+ - team sport
+ - knoledge transfer
+ - face to face
+   
 *** Describe XP value:                                              :drill:
-SCHEDULED: <2017-12-04 Mon>
+SCHEDULED: <2018-01-03 Wed>
 :PROPERTIES:
 :ID:       52a76a34-0FCC8-4EC6-b247-e4f80e1126f2
-:DRILL_LAST_INTERVAL: 2.0729
+:DRILL_LAST_INTERVAL: 1.159
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.63
-:DRILL_EASE: 2.281
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 5
+:DRILL_AVERAGE_QUALITY: 2.187
+:DRILL_EASE: 2.042
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:55]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:29]
 :END:
 **** Simplicity
-
 
 Simplicity means “what is the simplest thing that will work?” The
 purpose of this is to *avoid waste* and do only absolutely necessary
@@ -1543,23 +1547,24 @@ things such as keep the design of the system as simple as possible so
 that it is easier to maintain, support, and revise. Simplicity also
 means address only the requirements that you know about; don’t try to
 predict the future.
+
 **** Short
 - minimal working solution
 - avoid waste
 - avoid over-engineering
 - avoid feature-boom
 *** Describe XP value:                                              :drill:
-SCHEDULED: <2017-12-04 Mon>
+SCHEDULED: <2018-01-04 Thu>
 :PROPERTIES:
 :ID:       979e944e-f7b7-477a-8284-9ab729787555
-:DRILL_LAST_INTERVAL: 2.4461
+:DRILL_LAST_INTERVAL: 2.2207
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.456
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.25
+:DRILL_EASE: 2.079
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:57]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:31]
 :END:
 **** Feedback
 
@@ -1570,21 +1575,24 @@ feedback on your design and implementation, and then adjust your
 product going forward.
 
 **** Short
+
  - gain knowledge
+ - improve proctices (KaiZen)
+ - simple design
  - make sure it is done-done
 
 *** Describe XP value:                                              :drill:
-SCHEDULED: <2017-12-05 Tue>
+SCHEDULED: <2018-01-04 Thu>
 :PROPERTIES:
 :ID:       fd26fe2b-5c88-44e3-8195-50933438123
-:DRILL_LAST_INTERVAL: 2.5321
+:DRILL_LAST_INTERVAL: 2.4915
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.456
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.215
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:57]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:33]
 :END:
 
 **** Courage
@@ -1598,18 +1606,23 @@ doing something that doesn’t work and try something else. You need
 courage to accept and act on feedback, even when it’s difficult to
 accept.
 
+**** Short
+ - effective action in the face of fear
+ - raise issues
+ - stop doing wrong (admit to wrong-doing)
+
 *** Describe XP value:                                              :drill:
-SCHEDULED: <2017-12-04 Mon>
+SCHEDULED: <2018-01-04 Thu>
 :PROPERTIES:
 :ID:       b8087fe0-ddd5-43b0-8ef7-ad7e9488a768
-:DRILL_LAST_INTERVAL: 2.1923
+:DRILL_LAST_INTERVAL: 2.0514
 :DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.456
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.215
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-02 Sat 17:58]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:36]
 :END:
 **** Respect
 
@@ -1618,8 +1631,11 @@ communicate with each other, provide and accept feedback that honors
 your relationship, and to work together to identify simple designs and
 solutions.
 
-
-
+**** Short
+ - look at craft, not people
+ - diversity is valuable
+   you benefit from pepole you don't agree with
+   
 * COMMENT _ local vars
 
 # Local Variables:

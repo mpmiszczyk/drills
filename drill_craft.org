@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2018-01-02 Tue 23:20]--[2018-01-02 Tue 23:45] =>  0:25
 CLOCK: [2018-01-01 Mon 16:50]--[2018-01-01 Mon 17:15] =>  0:25
 CLOCK: [2017-12-30 Sat 17:50]--[2017-12-30 Sat 18:15] =>  0:25
 CLOCK: [2017-12-29 Fri 23:53]--[2017-12-30 Sat 00:18] =>  0:25
@@ -148,17 +149,17 @@ following a plan
 **** craftsmanship
 Not only *responding to change* but also *steadily adding value*
 *** Agile Manifesto                                                 :drill:
-SCHEDULED: <2017-11-27 Mon>
+SCHEDULED: <2018-01-04 Thu>
 :PROPERTIES:
 :ID:       2f1ed42f-e626-45d0-a5be-4543557debc5
-:DRILL_LAST_INTERVAL: 9.8006
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.456
+:DRILL_LAST_INTERVAL: 2.2687
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.812
+:DRILL_EASE: 2.368
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-17 Fri 16:31]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:26]
 :END:
 **** List all four
 - *Individuals and interactions* over *processes and tools*
@@ -255,17 +256,17 @@ productive partnerships
 Customer collaboration over contract renegotiation
 
 *** Software Craftsmanship Manifesto                                :drill:
-SCHEDULED: <2017-11-19 Sun>
+SCHEDULED: <2018-01-13 Sat>
 :PROPERTIES:
 :ID:       df890367-d8ce-4cef-999b-f65458a0ca03
-:DRILL_LAST_INTERVAL: 7.2475
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 10.8198
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.75
-:DRILL_EASE: 2.338
+:DRILL_AVERAGE_QUALITY: 2.8
+:DRILL_EASE: 2.362
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-11-12 Sun 13:57]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:25]
 :END:
 
 **** List all four
@@ -322,17 +323,17 @@ Reactive systems are
 
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2018-01-02 Tue>
+SCHEDULED: <2018-01-06 Sat>
 :PROPERTIES:
 :ID:       de26c209-ea03-4fcf-a905-7c936d3939de
-:DRILL_LAST_INTERVAL: 2.9886
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 23
+:DRILL_LAST_INTERVAL: 3.8824
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 24
 :DRILL_FAILURE_COUNT: 15
-:DRILL_AVERAGE_QUALITY: 2.522
-:DRILL_EASE: 2.227
+:DRILL_AVERAGE_QUALITY: 2.542
+:DRILL_EASE: 2.237
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 01:46]
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:21]
 :END:
 Reactive systems are
 

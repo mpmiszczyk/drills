@@ -105,6 +105,9 @@ Somewaht similar to fold on method?
 Or to event?
 
 *** Design Pattern                                                  :drill:
+:PROPERTIES:
+:ID:       0990162c-c03b-48c3-913d-ebff640a7832
+:END:
 **** *Decorator*
  - Attach additional responsibilities to an object
    dynamically. Decorators provide a flexible alternative to
@@ -220,6 +223,22 @@ to an entire class.
  - Strategy
  - Chain of resposibility
 **** Notes
+*** Design Pattern                                                  :drill:
+:PROPERTIES:
+:ID:       eb4a3749-3730-4e3f-8f2d-c4a232b8ad0e
+:END:
+**** Strategy
+
+**** Check List
+**** Problem
+**** Code
+**** Norvig
+**** Similar
+**** Notes
+* Design Antippaters
+from
+https://sourcemaking.com/antipatterns/software-project-management-antipatterns
+
 * COMMENT _ local vars
 
 # Local Variables:
