@@ -35,6 +35,15 @@ There is a potentially variable number of "handler" or "processing
 element" or "node" objects, and a stream of requests that must be
 handled. Need to efficiently process the requests without hard-wiring
 handler relationships and precedence, or request-to-handler mappings.
+**** Norvig
+**** Similar
+- Command (can be used with)
+- Mediator (decoupling sender and receiver)
+- Composit (Chain ackt like requests - it's parts)
+- Observer 
+**** Notes
+Somewaht similar to fold on method?
+Or to event?
 
 **** Code
 #+BEGIN_SRC python
@@ -94,15 +103,6 @@ handler relationships and precedence, or request-to-handler mappings.
   if __name__ == "__main__":
       main()
 #+END_SRC
-**** Norvig
-**** Similar
-- Command (can be used with)
-- Mediator (decoupling sender and receiver)
-- Composit (Chain ackt like requests - it's parts)
-- Observer 
-**** Notes
-Somewaht similar to fold on method?
-Or to event?
 
 *** Design Pattern                                                  :drill:
 :PROPERTIES:
@@ -137,6 +137,13 @@ Or to event?
 You want to add behavior or state to individual objects at
 run-time. Inheritance is not feasible because it is static and applies
 to an entire class.
+**** Norvig
+**** Similar
+ - Proxy
+ - Composite
+ - Strategy
+ - Chain of resposibility
+**** Notes
 **** Code
 #+BEGIN_SRC python
 
@@ -216,29 +223,104 @@ to an entire class.
   if __name__ == "__main__":
       main()
 #+END_SRC
-**** Norvig
-**** Similar
- - Proxy
- - Composite
- - Strategy
- - Chain of resposibility
-**** Notes
 *** Design Pattern                                                  :drill:
 :PROPERTIES:
-:ID:       eb4a3749-3730-4e3f-8f2d-c4a232b8ad0e
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 0
+:DRILL_TOTAL_REPEATS: 0
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 1.272
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:48]
 :END:
-**** Strategy
+**** *Strategy*
+Basic use of inheritance -> Open Closed Principle -> Open for extension
+closed for modification
+
+Capture the abstraction in an interface, bury implementation details
+in derived classes.
 
 **** Check List
+ - Identify an algorithm (i.e. a behavior) that the client would
+   prefer to access through a "flex point".
+ - Specify the signature for that algorithm in an interface.
+ - Bury the alternative implementation details in derived classes.
+ - Clients of the algorithm couple themselves to the interface.
+   
 **** Problem
-**** Code
+To minimize coupling and allow extensibility you should program for
+general case (abstraction) and leave implementation to someone
+(something) else
 **** Norvig
 **** Similar
 **** Notes
+**** Code
+#+BEGIN_SRC python
+  """
+  Define a family of algorithms, encapsulate each one, and make them
+  interchangeable. Strategy lets the algorithm vary independently from
+  clients that use it.
+  """
+
+  import abc
+
+
+  class Context:
+      """
+      Define the interface of interest to clients.
+      Maintain a reference to a Strategy object.
+      """
+
+      def __init__(self, strategy):
+          self._strategy = strategy
+
+      def context_interface(self):
+          self._strategy.algorithm_interface()
+
+
+  class Strategy(metaclass=abc.ABCMeta):
+      """
+      Declare an interface common to all supported algorithms. Context
+      uses this interface to call the algorithm defined by a
+      ConcreteStrategy.
+      """
+
+      @abc.abstractmethod
+      def algorithm_interface(self):
+          pass
+
+
+  class ConcreteStrategyA(Strategy):
+      """
+      Implement the algorithm using the Strategy interface.
+      """
+
+      def algorithm_interface(self):
+          pass
+
+
+  class ConcreteStrategyB(Strategy):
+      """
+      Implement the algorithm using the Strategy interface.
+      """
+
+      def algorithm_interface(self):
+          pass
+
+
+  def main():
+      concrete_strategy_a = ConcreteStrategyA()
+      context = Context(concrete_strategy_a)
+      context.context_interface()
+
+
+  if __name__ == "__main__":
+      main()
+#+END_SRC
 * Design Antippaters
 from
 https://sourcemaking.com/antipatterns/software-project-management-antipatterns
-
 * COMMENT _ local vars
 
 # Local Variables:
