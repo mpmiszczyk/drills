@@ -233,6 +233,7 @@ to an entire class.
 :DRILL_EASE: 1.272
 :DRILL_LAST_QUALITY: 1
 :DRILL_LAST_REVIEWED: [2018-01-02 Tue 23:48]
+:ID:       fe4860cb-0803-4f18-98f5-a68f1b41e762
 :END:
 **** *Strategy*
 Basic use of inheritance -> Open Closed Principle -> Open for extension
