@@ -64,17 +64,17 @@ power-machine down all good craftsman's can and are building they own
 rigs and templates.  It's nothing now (or Sci-Fi)
 
 ** Dunning Kruger Effect                                             :drill:
-SCHEDULED: <2018-01-05 Fri>
+SCHEDULED: <2018-01-11 Thu>
 :PROPERTIES:
 :ID:       47843b20-b74f-43b5-a420-3e8630165555
-:DRILL_LAST_INTERVAL: 3.891
+:DRILL_LAST_INTERVAL: 3.785
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.36
+:DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2018-01-01 Mon 16:55]
+:DRILL_LAST_REVIEWED: [2018-01-07 Sun 23:28]
 :END:
 ...
 

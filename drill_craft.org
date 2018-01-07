@@ -1,5 +1,6 @@
 * craft drill                                                         :craft:
 :LOGBOOK:
+CLOCK: [2018-01-07 Sun 22:32]--[2018-01-07 Sun 22:57] =>  0:25
 CLOCK: [2018-01-04 Thu 23:38]--[2018-01-04 Thu 23:55] =>  0:17
 CLOCK: [2018-01-03 Wed 21:31]--[2018-01-03 Wed 21:56] =>  0:25
 CLOCK: [2018-01-02 Tue 23:20]--[2018-01-02 Tue 23:45] =>  0:25
@@ -347,17 +348,17 @@ Reactive systems are
  - fault-tolerant
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2018-01-07 Sun>
+SCHEDULED: <2018-01-15 Mon>
 :PROPERTIES:
 :ID:       50d0c2db-4ef0-41d3-9e04-6bc687bb8278
-:DRILL_LAST_INTERVAL: 5.5443
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 7.9502
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.674
-:DRILL_EASE: 2.302
+:DRILL_AVERAGE_QUALITY: 2.701
+:DRILL_EASE: 2.315
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2018-01-01 Mon 16:53]
+:DRILL_LAST_REVIEWED: [2018-01-07 Sun 23:28]
 :END:
 Describe
 
@@ -419,17 +420,17 @@ necessary.  The client of a component is not burdened with handling
 its failures.
 
 *** Reactive Manifesto                                              :drill:
-SCHEDULED: <2018-01-05 Fri>
+SCHEDULED: <2018-01-10 Wed>
 :PROPERTIES:
 :ID:       21e2503a-b163-468f-a4c0-630befdf4376
-:DRILL_LAST_INTERVAL: 1.0583
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 18
+:DRILL_LAST_INTERVAL: 2.6718
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 19
 :DRILL_FAILURE_COUNT: 15
-:DRILL_AVERAGE_QUALITY: 2.398
-:DRILL_EASE: 2.162
+:DRILL_AVERAGE_QUALITY: 2.43
+:DRILL_EASE: 2.179
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2018-01-04 Thu 23:47]
+:DRILL_LAST_REVIEWED: [2018-01-07 Sun 22:34]
 :END:
 Describe
 
@@ -440,6 +441,7 @@ Describe
  - responsive under varying workload
  - react to change
  - *no bottlenecks*
+ - sharding
  - *live performance measures*
 
 **** Long
@@ -676,17 +678,17 @@ corrupted internal state.
 
 
 *** Reactive glossary                                               :drill:
-SCHEDULED: <2018-01-06 Sat>
+SCHEDULED: <2018-01-08 Mon>
 :PROPERTIES:
 :ID:       29b29221-63e1-4d97-aea4-dc0bb8a30916
-:DRILL_LAST_INTERVAL: 7.2571
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 9
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.715
-:DRILL_EASE: 2.322
+:DRILL_LAST_INTERVAL: 1.2997
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 10
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 2.59
+:DRILL_EASE: 2.261
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2017-12-30 Sat 20:30]
+:DRILL_LAST_REVIEWED: [2018-01-07 Sun 23:29]
 :END:
 Describe
 
@@ -699,7 +701,11 @@ In contrast to Event-Driven
  - message -> data sent to destination
  - rather than focused on source, concentrate on recipient
    - that's where the logic is
- - ? resilience ?
+ - ?inverstion of failure handling?
+   - events are sold as less coupled since they don't know much about
+     listners
+   - but they are still often coupled with recipients by handling
+     failure, which is hard in event driven systems 
 
 **** Long
 
